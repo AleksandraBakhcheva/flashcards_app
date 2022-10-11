@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    height: 20vh;
+    width: 100vw;
+    align-items: center;
+    background-color: var(--header-footer-background);
+}
+.header__logo {
+    height: 20vh;
+}
+.header__title {
+    margin-left: 5%;
+    text-transform: uppercase;
+    color: var(--header-footer-color);
+}
+.header__title h1 {
+    margin-bottom: 0;
+}
+.header__title h3 {
+    margin-top: 1%;
+}

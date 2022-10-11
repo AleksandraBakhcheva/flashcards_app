@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--header-footer-color);
+    background-color: var(--header-footer-background);
+}
+.footer__links {
+    margin-bottom: 1%;
+}
+.footer__links a {
+    text-decoration: none;
+    color: var(--header-footer-color);
+}
+.footer a:hover {
+    height: 2.5vh;
+    color: var(--header-footer-background);
+    background-color: var(--header-footer-color);
+}
