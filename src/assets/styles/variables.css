@@ -2,4 +2,11 @@
 :root {
     --header-footer-background: #000000;
     --header-footer-color: #ffffff;
+    --wordcard-background-color: rgb(194, 120, 127, 0.3);
+}
+
+/* other */
+:root {
+    --wordcard-box-shadow: rgba(194, 120, 127, 0.4) 0px 5px 15px;
+    --general-border-radius: 10px;
 }

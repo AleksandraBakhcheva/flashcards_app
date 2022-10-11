@@ -1,0 +1,34 @@
+.wordcard {
+    display: flex;
+    justify-content: center;
+}
+.wordcard__box {
+    width: 30vw;
+    height: 50vh;
+    margin-top: 4%;
+    border-radius: var(--general-border-radius);
+    box-shadow: var(--wordcard-box-shadow);
+    background-color: var(--wordcard-background-color);
+}
+.wordcard__close, .wordcard__language, .wordcard__word, .wordcard__transcription, .wordcard__translation {
+    display: flex;
+    justify-content: center;
+}
+.wordcard__close {
+    margin: 1% 2% 0 0;
+    justify-content: flex-end;
+}
+.wordcard__language {
+    margin-top: 0;
+}
+.wordcard__word {
+    margin-top: 20%;
+    margin-bottom: 0;
+    font-size: 5rem;
+}
+.wordcard__translation {
+    margin-top: 19%;
+    margin-right: 2%;
+    justify-content: flex-end;
+    border-radius: var(--general-border-radius);
+}
