@@ -1,0 +1,19 @@
+.wordslist {
+    display: flex;
+    justify-content: center; 
+}
+.wordslist__table {
+    width: 50vw;
+    height: 8vh;
+    margin-top: 4%;
+    border: var(--general-table-border);
+    background-color: var(--wordcard-background-color);
+}
+.wordslist__item {
+    width: 20vw;
+    border: var(--general-table-border);
+    background-color: var(--header-footer-color);
+}
+.item_modification {
+    width: 10vw;
+}

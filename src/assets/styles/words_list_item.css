@@ -1,0 +1,23 @@
+.item_modification {
+    padding-left: 1%;
+    font-weight: 200;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.wordslist__edit, .wordslist__delete {
+    margin: 2%;
+    border: var(--general-table-border);
+    border-radius: 5px;
+}
+.wordslist__edit img, .wordslist__delete img {
+    width: 20px;
+    height: 20px;
+}
+.wordslist__edit:hover {
+    background-color: var(--words-button-edit);
+}
+.wordslist__delete:hover {
+    background-color: var(--words-button-delete);
+}

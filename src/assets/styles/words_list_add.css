@@ -1,0 +1,24 @@
+.wordslist__add {
+    width: 20vw;
+    height: 4vh;
+    border: var(--general-table-border);
+    background-color: var(--header-footer-color);
+}
+.buttons {
+    width: 10vw;
+}
+.wordslist__save, .wordslist__cancel {
+    width: 5vw;
+    margin: 2%;
+    border: var(--general-table-border);
+    border-radius: 5px;
+}
+.wordslist__save {
+    background-color: var(--words-button-edit);
+}
+.wordslist__cancel {
+    background-color: var(--words-button-delete);
+}
+.wordslist__save:hover, .wordslist__cancel:hover {
+    color: var(--header-footer-color);
+}

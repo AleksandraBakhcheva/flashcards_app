@@ -1,8 +1,5 @@
 .footer {
     display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100vw;
     height: 15vh;
     justify-content: center;

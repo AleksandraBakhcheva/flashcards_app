@@ -1,4 +1,4 @@
-import "../styles/wordcard.css";
+import "../styles/word_card.css";
 
 function WordCard(props) {
     return (
@@ -11,12 +11,8 @@ function WordCard(props) {
                 <div className="wordcard__translation">
                     <button>Translate</button>
                 </div>
-
             </div>
         </div>
-
-
-
     );
 }
 

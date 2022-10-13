@@ -5,7 +5,7 @@
 .wordcard__box {
     width: 30vw;
     height: 50vh;
-    margin-top: 4%;
+    margin-top: 2%;
     border-radius: var(--general-border-radius);
     box-shadow: var(--wordcard-box-shadow);
     background-color: var(--wordcard-background-color);
@@ -18,8 +18,15 @@
     margin: 1% 2% 0 0;
     justify-content: flex-end;
 }
+.wordcard__close:hover {
+    color: var(--header-footer-color);
+}
 .wordcard__language {
-    margin-top: 0;
+    width: 5vw;
+    height: 3vh;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--word-card-button);
 }
 .wordcard__word {
     margin-top: 20%;
@@ -30,5 +37,13 @@
     margin-top: 19%;
     margin-right: 2%;
     justify-content: flex-end;
+}
+.wordcard__translation button {
+    height: 3vh;
+    border: var(--general-table-border);
     border-radius: var(--general-border-radius);
+}
+.wordcard__translation button:hover {
+    color: var(--header-footer-color);
+    background-color: var(--word-card-button);
 }

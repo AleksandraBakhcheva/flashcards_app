@@ -7,3 +7,18 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+html, body {
+    height: 100%;
+}
+html { 
+    overflow-x: hidden;
+}
+.App__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.container__main {
+    flex: 1 1 auto;
+    padding: 30px;
+}
