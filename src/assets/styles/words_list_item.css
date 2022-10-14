@@ -10,6 +10,7 @@
     margin: 2%;
     border: var(--general-table-border);
     border-radius: 5px;
+    cursor: pointer;
 }
 .wordslist__edit img, .wordslist__delete img {
     width: 20px;

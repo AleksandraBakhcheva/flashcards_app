@@ -12,6 +12,7 @@
     margin: 2%;
     border: var(--general-table-border);
     border-radius: 5px;
+    cursor: pointer;
 }
 .wordslist__save {
     background-color: var(--words-button-edit);

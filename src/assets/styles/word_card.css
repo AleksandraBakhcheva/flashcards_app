@@ -19,6 +19,7 @@
     justify-content: flex-end;
 }
 .wordcard__close:hover {
+    cursor: pointer;
     color: var(--header-footer-color);
 }
 .wordcard__language {
@@ -42,6 +43,7 @@
     height: 3vh;
     border: var(--general-table-border);
     border-radius: var(--general-border-radius);
+    cursor: pointer;
 }
 .wordcard__translation button:hover {
     color: var(--header-footer-color);
