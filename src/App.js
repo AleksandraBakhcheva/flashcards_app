@@ -10,7 +10,7 @@ function App() {
     <div className="App__container">
         <Header />
         <main className="container__main">
-          <WordCard word={"orange"} transcription={"[ɒrɪndʒ]"} />
+          <WordCard word={"orange"} transcription={"[ɒrɪndʒ]"} meaning={"Апельсин, оранжевый"} />
           <WordslistTable />
         </main>
         <Footer />

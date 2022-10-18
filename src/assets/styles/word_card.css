@@ -27,6 +27,7 @@
     height: 3vh;
     margin: 0 auto;
     align-items: center;
+    color: var(--header-footer-color);
     background-color: var(--word-card-button);
 }
 .wordcard__word {
@@ -46,6 +47,16 @@
     cursor: pointer;
 }
 .wordcard__translation button:hover {
+    color: var(--header-footer-color);
+    background-color: var(--word-card-button);
+}
+.hidden {
+    display: none;
+}
+.translation {
+    margin-top: 0;
+    padding: 1%;
+    cursor: pointer;
     color: var(--header-footer-color);
     background-color: var(--word-card-button);
 }
