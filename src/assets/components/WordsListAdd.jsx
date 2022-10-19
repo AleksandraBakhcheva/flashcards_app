@@ -1,19 +1,30 @@
 import "../styles/words_list_add.css";
+import WordsListItem from "./WordsListItem";
+import React, { useState } from "react";
 
 function WordsListAdd(props) {
+
+    const [cancel, isCanceled] = useState(props.cancel === false);
+
+    const cancelChange = () => {
+        isCanceled(!cancel);
+    };
+    
     return (
-        <tr>
-            <td>
-                <input type="text" className="wordslist__add"></input>
-            </td>
-            <td>
-                <input type="text" className="wordslist__add"></input>
-            </td>
-            <td className="wordslist__add buttons">
-                <button className="wordslist__save">Save</button>
-                <button className="wordslist__cancel">Cancel</button>
-            </td>
-        </tr>
+            <tr className={"wordslist__item__box_add" + (cancel ? " hidden" : "")}>
+                <td>
+                    <input type="text" className="wordslist__add"></input>
+                </td>
+                <td>
+                    <input type="text" className="wordslist__add"></input>
+                </td>
+                <td className="wordslist__add buttons">
+                    <button className="wordslist__save">Save</button>
+                    <button onClick={cancelChange} className="wordslist__cancel">Cancel</button>
+                </td>
+                {/* {cancel ? <WordsListItem word={"Hello"} translation={"Привет"} /> : null} */}
+            </tr>
+            
     );
 }
 

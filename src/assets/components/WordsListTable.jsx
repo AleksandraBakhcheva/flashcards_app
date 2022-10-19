@@ -14,8 +14,7 @@ function WordslistTable() {
                     </tr>
                 </thead>
                 <WordsListItem word={"Hello"} translation={"Привет"} />
-                <WordsListItem word={"Good morning"} translation={"Доброе утро"} />
-                <WordsListAdd />
+                {/* <WordsListAdd /> */}
             </table>
         </div>
     );

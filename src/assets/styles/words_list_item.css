@@ -1,6 +1,13 @@
+.wordslist__item__box {
+    width: 100%;
+    height: 4vh;
+    border: var(--general-table-border);
+    background-color: var(--header-footer-color);
+}
 .item_modification {
     padding-left: 1%;
     font-weight: 200;
+    border: var(--general-table-border);
 }
 .buttons {
     display: flex;
@@ -21,4 +28,7 @@
 }
 .wordslist__delete:hover {
     background-color: var(--words-button-delete);
+}
+.hidden {
+    display: none;
 }

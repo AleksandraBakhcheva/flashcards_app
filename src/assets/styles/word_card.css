@@ -42,7 +42,7 @@
 }
 .wordcard__translation button {
     height: 3vh;
-    border: var(--general-table-border);
+    border: var(--header-footer-color);
     border-radius: var(--general-border-radius);
     cursor: pointer;
 }
