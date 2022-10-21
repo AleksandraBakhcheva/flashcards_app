@@ -1,6 +1,7 @@
 import "../styles/words_list_add.css";
-import WordsListItem from "./WordsListItem";
 import React, { useState } from "react";
+import EditDeleteButtons from "./EditDeleteButtons";
+
 
 function WordsListAdd(props) {
 
@@ -12,17 +13,16 @@ function WordsListAdd(props) {
     
     return (
         <tr className="wordslist__item__box_add">
-            <td className={"wordslist__add" + (cancel ? " hidden" : "")}>
+            <td className="wordslist__add">
                 <input type="text" className="wordslist__add"></input>
             </td>
-            <td className={"wordslist__add" + (cancel ? " hidden" : "")}>
+            <td className="wordslist__add">
                     <input type="text" className="wordslist__add"></input>
             </td>
-            <td className={"wordslist__add buttons" + (cancel ? " hidden" : "")}>
-                <button className="wordslist__save">Save</button>
-                <button onClick={cancelChange} className="wordslist__cancel">Cancel</button>
+            <td className="wordslist__add buttons">{cancel ? <EditDeleteButtons /> : null}
+                <button className={"wordslist__save" + (cancel ? " hidden" : "")}>Save</button>
+                <button onClick={cancelChange} className={"wordslist__cancel" + (cancel ? " hidden" : "")}>Cancel</button>
             </td>
-            {cancel ? <WordsListItem /> : null}
         </tr>
     );
 }
