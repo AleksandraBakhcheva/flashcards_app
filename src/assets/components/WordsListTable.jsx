@@ -13,8 +13,11 @@ function WordslistTable() {
                         <th className="wordslist__item item_modification"></th>
                     </tr>
                 </thead>
-                <WordsListItem word={"Hello"} translation={"Привет"} />
-                {/* <WordsListAdd /> */}
+                <tbody>
+                    <WordsListItem word={"Hello"} translation={"Привет"} />
+                    <WordsListAdd />
+                </tbody>
+                
             </table>
         </div>
     );

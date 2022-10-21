@@ -11,24 +11,22 @@ function WordsListItem(props) {
 
     const editListItem = () => {
         isHidden(!hidden);
+        
     }
 
     return (
-        <thead className="wordslist__item__box">
-            <tr className={(hidden ? " hidden" : "")}>
-                <td className="item_modification">{word}</td>
-                <td className="item_modification">{translation}</td>
-                <td className="item_modification buttons">
+        <tr className={"wordslist__item__box"}>{hidden ? <WordsListAdd /> : null}
+            <td className={"item_modify" + (hidden ? " hidden" : "")}>{word}</td>
+            <td className={"item_modify" + (hidden ? " hidden" : "")}>{translation}</td>
+            <td className={"item_modify buttons" + (hidden ? " hidden" : "")}>
                 <button onClick={editListItem} className="wordslist__edit">
                     <img src={pen} alt="pen" />
                 </button>
                 <button className="wordslist__delete">
                     <img src={trash} alt="trash" />
                 </button>
-                </td>    
-            </tr>
-            {hidden ? <WordsListAdd /> : null}
-        </thead>
+            </td>    
+        </tr>
     );
 }
 

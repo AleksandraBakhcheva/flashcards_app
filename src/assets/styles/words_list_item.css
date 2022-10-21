@@ -4,12 +4,14 @@
     border: var(--general-table-border);
     background-color: var(--header-footer-color);
 }
-.item_modification {
+.item_modify {
+    width: 20vw;
     padding-left: 1%;
     font-weight: 200;
     border: var(--general-table-border);
 }
 .buttons {
+    width: 10vw;
     display: flex;
     justify-content: flex-end;
 }
