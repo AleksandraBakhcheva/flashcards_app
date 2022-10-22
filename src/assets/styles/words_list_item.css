@@ -11,12 +11,15 @@
     border: var(--general-table-border);
 }
 .buttons {
-    width: 10vw;
     display: flex;
+    width: 10vw;
+    padding: 0;
     justify-content: flex-end;
+    border: var(--general-table-border);
 }
 .wordslist__edit, .wordslist__delete {
     margin: 2%;
+    padding: 2% 3% 0 3%;
     border: var(--general-table-border);
     border-radius: 5px;
     cursor: pointer;

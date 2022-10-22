@@ -1,19 +1,15 @@
-.wordslist__item__box_add {
-    width: 100%;
-    height: 4vh;
-}
 .wordslist__item__box_add td {
     padding: 0;
 }
 .wordslist__add {
     width: 20vw;
-    height: 4vh;
+    height: 4.5vh;
     padding: 0;
     border: var(--general-table-border);
     background-color: var(--header-footer-color);
 }
 .buttons {
-    width: 10vw;
+    width: 12vw;
 }
 .wordslist__save, .wordslist__cancel {
     width: 5vw;
