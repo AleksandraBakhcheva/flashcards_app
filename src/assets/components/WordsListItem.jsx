@@ -1,6 +1,7 @@
 import "../styles/words_list_item.css";
-import pen from "../images/pen.svg";
-import trash from "../images/trash.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
 import WordsListAdd from "./WordsListAdd";
 
@@ -22,10 +23,10 @@ function WordsListItem(props) {
                 <td className="item_modify">{translation}</td>
                 <td className="item_modify buttons">
                     <button onClick={editListItem} className="wordslist__edit">
-                        <img src={pen} alt="pen" />
+                        <FontAwesomeIcon icon={faPencil} className="wordslist__edit_icon" />
                     </button>
                     <button className="wordslist__delete">
-                        <img src={trash} alt="trash" />
+                        <FontAwesomeIcon icon={faTrash} className="wordslist__delete_icon" />
                     </button>    
                 </td>
             </tr>

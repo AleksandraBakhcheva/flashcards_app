@@ -16,16 +16,16 @@
 .arrow_left {
     background-color: var(--arrow-left-background);
 }
+.arrow_left_icon, .arrow_right_icon {
+    width: 20px;
+    height: 20px;
+    color: var(--header-footer-color);
+}
 .arrow_right {
     background-color: var(--arrow-right-background);
 }
 .buttons__arrows:hover {
-    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.15);
-}
-.buttons__arrows img {
-    width: 20px;
-    height: 20px;
-    margin-top: 10%;
+    box-shadow: var(--arrow-buttons-hover);
 }
 .wordslist__index {
     display: flex;

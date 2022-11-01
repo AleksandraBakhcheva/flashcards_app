@@ -8,6 +8,7 @@
     --words-button-delete: rgb(255, 0, 0, 0.8);
     --arrow-left-background: rgb(255, 56, 75);
     --arrow-right-background: rgb(0, 42, 255);
+    --arrow-buttons-hover: 0 0 0 1rem rgba(0, 0, 0, 0.15);
 }
 
 /* other */

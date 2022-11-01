@@ -24,14 +24,16 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.wordslist__edit img, .wordslist__delete img {
+.wordslist__edit_icon, .wordslist__delete_icon {
     width: 20px;
     height: 20px;
 }
 .wordslist__edit:hover {
+    color: var(--header-footer-color);
     background-color: var(--words-button-edit);
 }
 .wordslist__delete:hover {
+    color: var(--header-footer-color);
     background-color: var(--words-button-delete);
 }
 .hidden {

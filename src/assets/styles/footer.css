@@ -14,8 +14,17 @@
     text-decoration: none;
     color: var(--header-footer-color);
 }
-.footer a:hover {
+.footer__links_highlighted:hover {
     height: 2.5vh;
     color: var(--header-footer-background);
     background-color: var(--header-footer-color);
+}
+.footer__links_github {
+    margin-top: 1%;
+    text-align: center;
+}
+.github_icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
