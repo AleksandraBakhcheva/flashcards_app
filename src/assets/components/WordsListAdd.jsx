@@ -4,8 +4,8 @@ import WordsListItem from "./WordsListItem";
 
 function WordsListAdd(props) {
 
-    const [save, isSaved] = useState(props.save === false);
-    const [cancel, isCanceled] = useState(props.cancel === false);
+    const [save, isSaved] = useState(false);
+    const [cancel, isCanceled] = useState(false);
     const [word, isWordChanged] = useState("");
     const [translation, isTranslationChanged] = useState("");
 

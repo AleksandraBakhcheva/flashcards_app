@@ -1,0 +1,62 @@
+[
+    {
+        "index": 1,
+        "word": "orange",
+        "transcription": "[ɒrɪndʒ]",
+        "meaning": "апельсин, оранжевый"
+    },
+    {
+        "index": 2,
+        "word": "hello",
+        "transcription": "[həˈləʊ]",
+        "meaning": "здороваться, звать, окликать"
+    },
+    {
+        "index": 3,
+        "word": "option",
+        "transcription": "[ˈɒpʃn]",
+        "meaning": "вариант, опция, опцион"
+    },
+    {
+        "index": 4,
+        "word": "code",
+        "transcription": "[kəʊd]",
+        "meaning": "код, кодекс, кодировка"
+    },
+    {
+        "index": 5,
+        "word": "programmer",
+        "transcription": "[ˈprəʊ.ɡræm.ər]",
+        "meaning": "программист"
+    },
+    {
+        "index": 6,
+        "word": "friend",
+        "transcription": "[frend]",
+        "meaning": "друг, подруга, приятель"
+    }, 
+    {
+        "index": 7,
+        "word": "happy",
+        "transcription": "[ˈhæpɪ]",
+        "meaning": "счастливый, довольный, веселый"
+    },
+    {
+        "index": 8,
+        "word": "word",
+        "transcription": "[wɜːd]",
+        "meaning": "слово, известие, речь"
+    },
+    {
+        "index": 9,
+        "word": "giraffe",
+        "transcription": "[dʒɪˈrɑːf]",
+        "meaning": "жираф"
+    },
+    {
+        "index": 10,
+        "word": "language",
+        "transcription": "[ˈlæŋɡwɪdʒ]",
+        "meaning": "язык, речь, брань"
+    }
+]

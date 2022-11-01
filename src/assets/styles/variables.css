@@ -6,6 +6,8 @@
     --word-card-button: rgba(0, 0, 255, 0.5);
     --words-button-edit: rgba(0, 100, 0, 0.8);
     --words-button-delete: rgb(255, 0, 0, 0.8);
+    --arrow-left-background: rgb(255, 56, 75);
+    --arrow-right-background: rgb(0, 42, 255);
 }
 
 /* other */

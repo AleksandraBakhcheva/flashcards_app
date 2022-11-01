@@ -1,0 +1,36 @@
+.wordslist {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    margin: 4% auto;
+}
+.buttons__arrows {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.arrow_left {
+    background-color: var(--arrow-left-background);
+}
+.arrow_right {
+    background-color: var(--arrow-right-background);
+}
+.buttons__arrows:hover {
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+.buttons__arrows img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10%;
+}
+.wordslist__index {
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    top: 83%;
+    justify-content: center;
+}
