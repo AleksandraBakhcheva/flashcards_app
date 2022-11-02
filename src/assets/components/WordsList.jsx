@@ -8,7 +8,11 @@ import WordCard from "./WordCard";
 
 function WordsList (props) {
 
-    const [index, showCard] = useState(0);
+    WordsList.defaultProps = {
+        index: 0
+    };
+
+    const [index, showCard] = useState(props.index);
 
     const showPrevCard = () => {
         showCard(index - 1);
@@ -20,11 +24,12 @@ function WordsList (props) {
 
     return (
         <div className="wordslist">
-            <button onClick={showPrevCard} className="buttons__arrows arrow_left">
+            <button onClick={showPrevCard} className={index < 1 ? "arrow_left_hidden" : "buttons__arrows arrow_left"}>
                 <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
             </button>
-            <WordCard word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} />
-            <button onClick={showNextCard} className="buttons__arrows arrow_right">
+            {index === undefined ? <WordCard /> :
+            <WordCard word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} />}
+            <button onClick={showNextCard} className={index > data.length - 2 ?"arrow_right_hidden" : "buttons__arrows arrow_right"}>
                 <FontAwesomeIcon icon={faArrowRight} className="arrow_right_icon" />
             </button>
             <div className="wordslist__index">{data[index].index + "/" + data.length}</div>

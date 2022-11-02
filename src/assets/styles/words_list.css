@@ -34,3 +34,11 @@
     top: 83%;
     justify-content: center;
 }
+.arrow_left_hidden, .arrow_right_hidden {
+    background-color: transparent;
+    border: none;
+    margin-right: 15.6%;
+}
+.arrow_right_hidden {
+    margin-right: 15.5%;
+}

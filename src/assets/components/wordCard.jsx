@@ -5,6 +5,12 @@ function WordCard(props) {
 
     const {word, transcription, meaning} = props;
 
+    WordCard.defaultProps = {
+        word: "word",
+        transcription: "[wɜːd]",
+        meaning: "слово, известие, речь"
+    };
+
     const [hidden, hideButton] = useState(false);
     const [translation, showMeaning] = useState(false);
 
