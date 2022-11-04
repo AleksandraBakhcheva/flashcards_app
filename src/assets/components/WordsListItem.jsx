@@ -7,12 +7,12 @@ import WordsListAdd from "./WordsListAdd";
 
 function WordsListItem(props) {
 
-    const [edit, isHidden] = useState(false);
-    const [word, isSet] = useState(props.word);
+    const [edit, isEdited] = useState(false);
+    const [word, setWord] = useState(props.word);
     const [translation, isTranslated] = useState(props.translation);
 
     const editListItem = () => {
-        isHidden(!edit);
+        isEdited(!edit);
     } 
 
     return (

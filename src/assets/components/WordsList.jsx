@@ -12,14 +12,14 @@ function WordsList (props) {
         index: 0
     };
 
-    const [index, showCard] = useState(props.index);
+    const [index, isIndexed] = useState(props.index);
 
     const showPrevCard = () => {
-        showCard(index - 1);
+        isIndexed(index - 1);
     }
 
     const showNextCard = () => {
-        showCard(index + 1);
+        isIndexed(index + 1);
     }
 
     return (

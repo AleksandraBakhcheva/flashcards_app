@@ -12,12 +12,12 @@ function WordCard(props) {
         meaning: "слово, известие, речь"
     };
 
-    const [hidden, hideButton] = useState(false);
-    const [translation, showMeaning] = useState(false);
+    const [hidden, isHidden] = useState(false);
+    const [translation, isTranslated] = useState(false);
 
     const showTranslation = () => {
-        hideButton(!hidden);
-        showMeaning(!translation);
+        isHidden(!hidden);
+        isTranslated(!translation);
     };
 
     return (

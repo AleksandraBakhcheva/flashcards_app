@@ -6,8 +6,8 @@ function WordsListAdd(props) {
 
     const [save, isSaved] = useState(false);
     const [cancel, isCanceled] = useState(false);
-    const [word, isWordChanged] = useState("");
-    const [translation, isTranslationChanged] = useState("");
+    const [word, setWord] = useState("");
+    const [translation, isTranslated] = useState("");
 
     const savelListItem = () => {
         isSaved(!save);
@@ -18,11 +18,11 @@ function WordsListAdd(props) {
     }
 
     const handleWordChange = (event) => {
-        isWordChanged(event.target.value);
+        setWord(event.target.value);
     }
     
     const handleTranslationChange = (event) => {
-        isTranslationChanged(event.target.value);
+        isTranslated(event.target.value);
     }
 
     return (
