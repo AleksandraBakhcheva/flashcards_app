@@ -31,7 +31,7 @@ function WordCard(props) {
                 <h1 className="wordcard__word">{word}</h1>
                 <p className="wordcard__transcription">{transcription}</p>
                 <div onClick={showTranslation} className="wordcard__translation">
-                    <motion.button className={hidden ? "hidden" : ""} whileHover={{ scale: 1.1}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}} >Translate</motion.button>
+                    <motion.button className={hidden ? "hidden" : ""} whileHover={{scale: 1.1}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}} >Translate</motion.button>
                     <p className={translation ? "translation" : "hidden"}>{meaning}</p>
                 </div>
             </div>

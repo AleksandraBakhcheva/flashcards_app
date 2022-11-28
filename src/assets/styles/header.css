@@ -19,3 +19,14 @@
 .header__title h3 {
     margin-top: 1%;
 }
+.header__menu {
+    margin-left: 15%;
+}
+.header__links {
+    text-decoration: none;
+    color: var(--header-footer-color);
+}
+.header__links:hover {
+    color: var(--header-footer-background);
+    background-color: var(--header-footer-color);
+}

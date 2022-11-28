@@ -1,21 +1,23 @@
 import "./assets/styles/general.css";
 import "./assets/styles/variables.css";
-import Header from "./assets/components/Header";
+import Layout from "./assets/components/Layout";
+import NotFoundPage from "./assets/components/NotFoundPage";
 import WordslistTable from "./assets/components/WordsListTable";
-import Footer from "./assets/components/Footer";
 import WordsList from "./assets/components/WordsList";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App__container">
-        <Header />
-        <main className="container__main">
-          <WordsList />
-          <WordslistTable />
-        </main>
-        <Footer />
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="Languages-Learn-Flashcards-Project" element={<WordslistTable />} />
+          <Route path="game" element={<WordsList />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </>
+    );
 }
 
 export default App;
