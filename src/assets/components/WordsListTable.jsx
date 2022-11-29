@@ -1,6 +1,7 @@
 import "../styles/words_list_table.css";
 import WordsListItem from "./WordsListItem";
 import WordsListAdd from "./WordsListAdd";
+import data from "../wordslist.json";
 
 function WordslistTable() {
     return (
@@ -14,10 +15,13 @@ function WordslistTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    <WordsListItem word={"Hello"} translation={"Привет"} />
+                    {
+                        data.map((item) =>
+                            <WordsListItem key={item} word={item.word} translation={item.meaning} />
+                        )
+                    }
                     <WordsListAdd />
                 </tbody>
-                
             </table>
         </div>
     );

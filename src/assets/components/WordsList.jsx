@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../styles/words_list.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import data from "../wordslist.json"
 import WordCard from "./WordCard";
 

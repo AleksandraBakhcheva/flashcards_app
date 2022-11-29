@@ -5,7 +5,7 @@
 .wordslist__table {
     width: 50vw;
     height: 8vh;
-    margin-top: 4%;
+    margin: auto;
     border: var(--general-table-border);
     background-color: var(--wordcard-background-color);
 }
