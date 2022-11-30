@@ -7,11 +7,7 @@ import WordCard from "./WordCard";
 
 function WordsList (props) {
 
-    WordsList.defaultProps = {
-        index: 0
-    };
-
-    const [index, isIndexed] = useState(props.index);
+    const [index, isIndexed] = useState(0);
 
     const showPrevCard = () => {
         isIndexed(index - 1);
