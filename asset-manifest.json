@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Languages-Learn-Flashcards-Project/static/css/main.87843af7.css",
-    "main.js": "/Languages-Learn-Flashcards-Project/static/js/main.7ab460ed.js",
+    "main.css": "/Languages-Learn-Flashcards-Project/static/css/main.ac3c501a.css",
+    "main.js": "/Languages-Learn-Flashcards-Project/static/js/main.aed3a769.js",
     "static/js/787.996c9df3.chunk.js": "/Languages-Learn-Flashcards-Project/static/js/787.996c9df3.chunk.js",
     "static/media/error_404.png": "/Languages-Learn-Flashcards-Project/static/media/error_404.08c37dca8386b784c6ac.png",
     "static/media/logo.png": "/Languages-Learn-Flashcards-Project/static/media/logo.3a6e8420df4cea17062d.png",
     "index.html": "/Languages-Learn-Flashcards-Project/index.html",
-    "main.87843af7.css.map": "/Languages-Learn-Flashcards-Project/static/css/main.87843af7.css.map",
-    "main.7ab460ed.js.map": "/Languages-Learn-Flashcards-Project/static/js/main.7ab460ed.js.map",
+    "main.ac3c501a.css.map": "/Languages-Learn-Flashcards-Project/static/css/main.ac3c501a.css.map",
+    "main.aed3a769.js.map": "/Languages-Learn-Flashcards-Project/static/js/main.aed3a769.js.map",
     "787.996c9df3.chunk.js.map": "/Languages-Learn-Flashcards-Project/static/js/787.996c9df3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87843af7.css",
-    "static/js/main.7ab460ed.js"
+    "static/css/main.ac3c501a.css",
+    "static/js/main.aed3a769.js"
   ]
 }
