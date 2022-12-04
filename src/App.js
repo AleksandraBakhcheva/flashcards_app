@@ -13,8 +13,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="Languages-Learn-Flashcards-Project" element={<WordslistTable />} />
           <Route path="game" element={<WordsList />} />
-          <Route path="*" element={<NotFoundPage />} />
-          <Route path='*' element={<Navigate replace to='/404'/>} />
+          <Route path="/404" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate replace to="/404"/>} />
         </Route>
       </Routes>
     </>
