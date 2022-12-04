@@ -16,7 +16,7 @@ function Header() {
             <nav className="header__menu">
                 <ul>
                     <li>
-                        <Link className="header__links" to="/Languages-Learn-Flashcards-Project">Home</Link>
+                        <Link className="header__links" to="/">Home</Link>
                     </li>
                     <li>
                         <Link className="header__links" to="/game">Game</Link>
