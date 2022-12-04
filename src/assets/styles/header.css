@@ -1,12 +1,14 @@
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
     height: 20vh;
     width: 100vw;
     align-items: center;
     background-color: var(--header-footer-background);
 }
 .header__logo {
-    height: 20vh;
+    height: 20.6vh;
 }
 .header__title {
     margin-left: 5%;
