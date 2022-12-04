@@ -13,7 +13,7 @@ function NotFoundPage () {
             <p>had its name changed or is temporarily unavailable.</p>
             <img className="notfound__pic" src={error_404} alt="book" />
             <div>
-                <Link to="/Languages-Learn-Flashcards-Project">
+                <Link to="/">
                     <motion.button className="notfound__button" whileHover={{scale: 1.1}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}}>GO TO HOMEPAGE</motion.button>
                 </Link>
             </div>
