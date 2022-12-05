@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Languages-Learn-Flashcards-Project/static/css/main.ac3c501a.css",
-    "main.js": "/Languages-Learn-Flashcards-Project/static/js/main.ae4cecd8.js",
-    "static/js/787.996c9df3.chunk.js": "/Languages-Learn-Flashcards-Project/static/js/787.996c9df3.chunk.js",
-    "static/media/error_404.png": "/Languages-Learn-Flashcards-Project/static/media/error_404.08c37dca8386b784c6ac.png",
-    "static/media/logo.png": "/Languages-Learn-Flashcards-Project/static/media/logo.3a6e8420df4cea17062d.png",
-    "index.html": "/Languages-Learn-Flashcards-Project/index.html",
-    "main.ac3c501a.css.map": "/Languages-Learn-Flashcards-Project/static/css/main.ac3c501a.css.map",
-    "main.ae4cecd8.js.map": "/Languages-Learn-Flashcards-Project/static/js/main.ae4cecd8.js.map",
-    "787.996c9df3.chunk.js.map": "/Languages-Learn-Flashcards-Project/static/js/787.996c9df3.chunk.js.map"
+    "main.css": "/flashcards_app/static/css/main.ac3c501a.css",
+    "main.js": "/flashcards_app/static/js/main.7c97a4d5.js",
+    "static/js/787.996c9df3.chunk.js": "/flashcards_app/static/js/787.996c9df3.chunk.js",
+    "static/media/error_404.png": "/flashcards_app/static/media/error_404.08c37dca8386b784c6ac.png",
+    "static/media/logo.png": "/flashcards_app/static/media/logo.3a6e8420df4cea17062d.png",
+    "index.html": "/flashcards_app/index.html",
+    "main.ac3c501a.css.map": "/flashcards_app/static/css/main.ac3c501a.css.map",
+    "main.7c97a4d5.js.map": "/flashcards_app/static/js/main.7c97a4d5.js.map",
+    "787.996c9df3.chunk.js.map": "/flashcards_app/static/js/787.996c9df3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac3c501a.css",
-    "static/js/main.ae4cecd8.js"
+    "static/js/main.7c97a4d5.js"
   ]
 }
