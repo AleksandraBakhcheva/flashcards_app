@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 function WordCard(props) {
 
-    const {word, transcription, meaning} = props;
+    const {word, transcription, meaning, learned, onClick} = props;
 
     WordCard.defaultProps = {
         word: "word",
@@ -18,16 +18,17 @@ function WordCard(props) {
     const showTranslation = () => {
         isHidden(!hidden);
         isTranslated(!translation);
+        onClick();
     };
 
     return (
         <motion.div className="wordcard" animate={{
-            scale: [1, 1.2, 1.2, 1, 1],
+            scale: [1, 1, 1, 1, 1],
             rotate: [0, 360, 0],
             borderRadius: ["20%", "50%", "20%", "50%", "20%"],}} transition={{ duration: 2}}>
             <div className="wordcard__box">
-                <h4 className="wordcard__close">X</h4>
-                <h4 className="wordcard__language">English</h4>
+                <h3 className="wordcard__language">Learn English words</h3>
+                <h4 className="wordcard__learned">Learned words: {learned}</h4>
                 <h1 className="wordcard__word">{word}</h1>
                 <p className="wordcard__transcription">{transcription}</p>
                 <div onClick={showTranslation} className="wordcard__translation">

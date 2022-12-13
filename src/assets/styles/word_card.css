@@ -9,25 +9,22 @@
     box-shadow: var(--wordcard-box-shadow);
     background-color: var(--wordcard-background-color);
 }
-.wordcard__close, .wordcard__language, .wordcard__word, .wordcard__transcription, .wordcard__translation {
+.wordcard__language, .wordcard__learned, .wordcard__word, .wordcard__transcription, .wordcard__translation {
     display: flex;
     justify-content: center;
 }
-.wordcard__close {
-    margin: 1% 2% 0 0;
-    justify-content: flex-end;
-}
-.wordcard__close:hover {
-    cursor: pointer;
-    color: var(--header-footer-color);
-}
 .wordcard__language {
-    width: 5vw;
-    height: 3vh;
-    margin: 0 auto;
+    height: 1vh;
     align-items: center;
+    text-transform: uppercase;
     color: var(--header-footer-color);
-    background-color: var(--word-card-button);
+}
+.wordcard__learned {
+    height: 4vh;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--header-footer-color);
+    background-color: var(--words-button-edit);
 }
 .wordcard__word {
     margin-top: 20%;
@@ -35,7 +32,7 @@
     font-size: 4rem;
 }
 .wordcard__translation {
-    margin-top: 22%;
+    margin-top: 18%;
     margin-right: 2%;
     justify-content: flex-end;
 }

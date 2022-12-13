@@ -8,6 +8,7 @@ import WordCard from "./WordCard";
 function WordsList (props) {
 
     const [index, isIndexed] = useState(0);
+    const [learned, isLearned] = useState(0);
 
     const showPrevCard = () => {
         isIndexed(index - 1);
@@ -17,13 +18,17 @@ function WordsList (props) {
         isIndexed(index + 1);
     }
 
+    const calculateLearned = () => {
+        isLearned(learned + 1);
+    }
+
     return (
         <div className="wordslist">
             <button onClick={showPrevCard} className={index < 1 ? "arrow_left_hidden" : "buttons__arrows arrow_left"}>
                 <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
             </button>
             {index === undefined ? <WordCard /> :
-            <WordCard word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} />}
+            <WordCard key={data[index].word} word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} learned={learned} onClick={calculateLearned} />}
             <button onClick={showNextCard} className={index > data.length - 2 ?"arrow_right_hidden" : "buttons__arrows arrow_right"}>
                 <FontAwesomeIcon icon={faArrowRight} className="arrow_right_icon" />
             </button>
