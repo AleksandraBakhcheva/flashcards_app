@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../styles/words_list.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -9,13 +9,16 @@ function WordsList (props) {
 
     const [index, isIndexed] = useState(0);
     const [learned, isLearned] = useState(0);
+    const ref = useRef();
 
     const showPrevCard = () => {
         isIndexed(index - 1);
+        ref.current.focus();
     }
 
     const showNextCard = () => {
         isIndexed(index + 1);
+        ref.current.focus();
     }
 
     const calculateLearned = () => {
@@ -28,7 +31,7 @@ function WordsList (props) {
                 <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
             </button>
             {index === undefined ? <WordCard /> :
-            <WordCard key={data[index].word} word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} learned={learned} onClick={calculateLearned} />}
+            <WordCard word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} learned={learned} onClick={calculateLearned} ref={ref} />}
             <button onClick={showNextCard} className={index > data.length - 2 ?"arrow_right_hidden" : "buttons__arrows arrow_right"}>
                 <FontAwesomeIcon icon={faArrowRight} className="arrow_right_icon" />
             </button>

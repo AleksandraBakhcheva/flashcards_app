@@ -1,8 +1,8 @@
 import "../styles/word_card.css";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 
-function WordCard(props) {
+const WordCard = forwardRef(function WordCard(props, ref) {
 
     const {word, transcription, meaning, learned, onClick} = props;
 
@@ -18,26 +18,34 @@ function WordCard(props) {
     const showTranslation = () => {
         isHidden(!hidden);
         isTranslated(!translation);
-        onClick();
+        if (!hidden) {
+            onClick();
+        }
     };
+
+    useEffect (() => {
+        isHidden(false);
+        isTranslated(false);
+    }, [word]);
 
     return (
         <motion.div className="wordcard" animate={{
-            scale: [1, 1, 1, 1, 1],
+            scale: [1, 1.2, 1.2, 1, 1],
             rotate: [0, 360, 0],
-            borderRadius: ["20%", "50%", "20%", "50%", "20%"],}} transition={{ duration: 2}}>
+            borderRadius: ["20%", "50%", "20%", "50%", "20%"]}} transition={{ duration: 2}}>
             <div className="wordcard__box">
                 <h3 className="wordcard__language">Learn English words</h3>
                 <h4 className="wordcard__learned">Learned words: {learned}</h4>
                 <h1 className="wordcard__word">{word}</h1>
                 <p className="wordcard__transcription">{transcription}</p>
                 <div onClick={showTranslation} className="wordcard__translation">
-                    <motion.button className={hidden ? "hidden" : ""} whileHover={{scale: 1.1}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}} >Translate</motion.button>
-                    <p className={translation ? "translation" : "hidden"}>{meaning}</p>
+                <motion.button ref={ref} className={hidden ? "hidden" : ""} whileHover={{scale: 1.2}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}} >Translate
+                </motion.button>
+                <p className={translation ? "translation" : "hidden"}>{meaning}</p>
                 </div>
             </div>
         </motion.div>
     );
-}
+});
 
 export default WordCard;

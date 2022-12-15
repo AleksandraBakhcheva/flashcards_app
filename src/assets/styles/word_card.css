@@ -32,7 +32,7 @@
     font-size: 4rem;
 }
 .wordcard__translation {
-    margin-top: 18%;
+    margin-top: 16%;
     margin-right: 2%;
     justify-content: flex-end;
 }
@@ -44,7 +44,10 @@
 }
 .wordcard__translation button:hover {
     color: var(--header-footer-color);
-    background-color: var(--word-card-button);
+    background-color: var(--arrow-left-background);
+}
+.wordcard__translation button:focus {
+    background-color: var(--arrow-left-background);
 }
 .hidden {
     display: none;
