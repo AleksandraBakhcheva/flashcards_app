@@ -49,13 +49,9 @@
 .wordcard__translation button:focus {
     background-color: var(--arrow-left-background);
 }
-.hidden {
-    display: none;
-}
 .translation {
     margin-top: 0;
     padding: 1%;
-    cursor: pointer;
     color: var(--header-footer-color);
     background-color: var(--word-card-button);
 }

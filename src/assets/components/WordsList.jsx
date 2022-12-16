@@ -9,6 +9,7 @@ function WordsList (props) {
 
     const [index, isIndexed] = useState(0);
     const [learned, isLearned] = useState(0);
+    const [words, clickedWords] = useState(data);
     const ref = useRef();
 
     const showPrevCard = () => {
@@ -23,6 +24,9 @@ function WordsList (props) {
 
     const calculateLearned = () => {
         isLearned(learned + 1);
+        const wordsUpdate = [...words];
+        wordsUpdate[index].isClicked = true;
+        clickedWords(wordsUpdate);
     }
 
     return (
@@ -31,11 +35,11 @@ function WordsList (props) {
                 <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
             </button>
             {index === undefined ? <WordCard /> :
-            <WordCard word={data[index].word} transcription={data[index].transcription} meaning={data[index].meaning} learned={learned} onClick={calculateLearned} ref={ref} />}
-            <button onClick={showNextCard} className={index > data.length - 2 ?"arrow_right_hidden" : "buttons__arrows arrow_right"}>
+            <WordCard word={words[index].word} transcription={words[index].transcription} meaning={words[index].meaning} learned={learned} onClick={calculateLearned} isClicked={words[index].isClicked} ref={ref}/>}
+            <button onClick={showNextCard} className={index > words.length - 2 ?"arrow_right_hidden" : "buttons__arrows arrow_right"}>
                 <FontAwesomeIcon icon={faArrowRight} className="arrow_right_icon" />
             </button>
-            <div className="wordslist__index">{data[index].index + "/" + data.length}</div>
+            <div className="wordslist__index">{words[index].index + "/" + words.length}</div>
         </div>
     );
 }
