@@ -1,9 +1,9 @@
 import "../styles/words_list_item.css";
+import WordsListAdd from "./WordsListAdd";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import React, { useState } from "react";
-import WordsListAdd from "./WordsListAdd";
 
 function WordsListItem(props) {
 

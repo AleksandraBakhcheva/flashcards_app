@@ -1,6 +1,6 @@
 import "../styles/word_card.css";
-import { motion } from "framer-motion";
 import React, { forwardRef } from "react";
+import { motion } from "framer-motion";
 
 const WordCard = forwardRef(function WordCard(props, ref) {
 

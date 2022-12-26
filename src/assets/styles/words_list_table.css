@@ -1,6 +1,7 @@
 .wordslist {
     display: flex;
     justify-content: center; 
+    flex-direction: column;
 }
 .wordslist__table {
     width: 50vw;

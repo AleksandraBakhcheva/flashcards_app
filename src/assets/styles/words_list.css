@@ -1,5 +1,6 @@
-.wordslist {
+.wordslist__cards {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 50vw;
     height: 50vh;

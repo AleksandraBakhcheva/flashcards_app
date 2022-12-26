@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react";
 import "../styles/words_list.css";
+import data from "../wordslist.json";
+import WordCard from "./WordCard";
+import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import data from "../wordslist.json"
-import WordCard from "./WordCard";
 
 function WordsList (props) {
 
@@ -30,7 +30,7 @@ function WordsList (props) {
     }
 
     return (
-        <div className="wordslist">
+        <div className="wordslist__cards">
             <button onClick={showPrevCard} className={index < 1 ? "arrow_left_hidden" : "buttons__arrows arrow_left"}>
                 <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
             </button>

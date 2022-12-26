@@ -1,8 +1,7 @@
 import "../styles/not_found_page.css";
 import error_404 from "../images/error_404.png";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 
 function NotFoundPage () {
     return (
