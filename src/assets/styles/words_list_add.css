@@ -16,6 +16,10 @@
     padding: 0;
     border: var(--general-table-border);
     background-color: var(--header-footer-color);
+    outline: none;
+}
+form input:focus, .wordslist__add_translation:focus {
+    border: solid 3px var(--arrow-left-background);
 }
 .wordslist__save, .wordslist__cancel {
     width: 6vw;

@@ -1,5 +1,5 @@
 import "../styles/word_card.css";
-import React, { forwardRef } from "react";
+import React, { forwardRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const WordCard = forwardRef(function WordCard(props, ref) {
@@ -20,6 +20,8 @@ const WordCard = forwardRef(function WordCard(props, ref) {
     const getTranslation = () => {
         onClick();
     };
+    
+    useEffect(() => ref.current.focus());
 
     return (
         <motion.div className="wordcard" animate={{
@@ -32,7 +34,7 @@ const WordCard = forwardRef(function WordCard(props, ref) {
                 <h1 className="wordcard__word">{word}</h1>
                 <p className="wordcard__transcription">{transcription}</p>
                 <div className="wordcard__translation">
-                {isClicked ? <p ref={ref} className="translation">{meaning}</p> : <motion.button onClick={getTranslation} ref={ref} autoFocus whileHover={{scale: 1.2}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}}>Translate</motion.button>}
+                {isClicked ? <p ref={ref} className="translation">{meaning}</p> : <motion.button onClick={getTranslation} ref={ref} whileHover={{scale: 1.2}} whileTap={{scale: 0.9, x: "-5px", y: "5px"}}>Translate</motion.button>}
                 </div>
             </div>
         </motion.div>
