@@ -18,7 +18,10 @@
     background-color: var(--header-footer-color);
     outline: none;
 }
-form input:focus, .wordslist__add_translation:focus {
+.wordslist__add_word, .wordslist__add_translation {
+    font-size: 0.9rem;
+}
+.wordslist__add_word:focus, .wordslist__add_translation:focus {
     border: solid 3px var(--arrow-left-background);
 }
 .wordslist__save, .wordslist__cancel {
@@ -38,6 +41,17 @@ form input:focus, .wordslist__add_translation:focus {
 }
 .wordslist__save:hover, .wordslist__cancel:hover {
     color: var(--header-footer-color);
+}
+.wordslist__msg__error, .wordslist__msg__success {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--header-footer-color);
+}
+.wordslist__msg__error {
+    background-color: var(--arrow-left-background);
+}
+.wordslist__msg__success {
+    background-color: var(--words-button-edit);
 }
 .hidden {
     display: none;
