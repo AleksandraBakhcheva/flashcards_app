@@ -20,8 +20,8 @@ function WordslistTable() {
                     </thead>
                     <tbody>
                         {
-                            data.map((item) =>
-                                <WordsListItem key={item} word={item.word} translation={item.meaning} />
+                            data.map((item, index) =>
+                                <WordsListItem key={index} word={item.word} translation={item.meaning} />
                             )
                         }
                     </tbody>

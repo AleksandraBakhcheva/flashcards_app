@@ -54,7 +54,6 @@ function WordsListAdd(props) {
         const engLetters = /^[A-Za-z]+$/gm;
         if (!engLetters.test(userInput)) {
             setErrorMsg("For the word field please use only latin characters");
-            wordRef.current.focus();
         }
         else {
             setErrorMsg("");
@@ -67,7 +66,6 @@ function WordsListAdd(props) {
         const rusLetters = /^[А-Яа-я]+$/gm;
         if (!rusLetters.test(userInput)) {
             setErrorMsg("For the translation field please use only cyrillic characters");
-            translationRef.current.focus();
         }
         else {
             setErrorMsg("");
