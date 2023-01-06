@@ -18,14 +18,11 @@ function WordslistTable() {
                             <th className="wordslist__item item_modification"></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        {
-                            data.map((item, index) =>
-                                <WordsListItem key={index} word={item.word} translation={item.meaning} />
-                            )
-                        }
-                    </tbody>
                 </table>
+                {
+                    data.map((item, index) =>
+                    <WordsListItem key={index} word={item.word} translation={item.meaning} />)
+                }
             </>
         </div>
     );

@@ -1,5 +1,4 @@
 import "../styles/words_list_add.css";
-//import WordsListItem from "./WordsListItem";
 import React, { useState, useRef } from "react";
 
 function WordsListAdd(props) {
@@ -9,8 +8,6 @@ function WordsListAdd(props) {
         translation: "",
     };
 
-    //const [save, isSaved] = useState(false);
-    //const [cancel, isCanceled] = useState(false);
     const [values, setValues] = useState(initialValues);
     const [errorMsg, setErrorMsg] = useState("");
     const [successMsg, setSuccessMsg] = useState("");
@@ -19,11 +16,11 @@ function WordsListAdd(props) {
 
     const addNewWord = (event) => {
         event.preventDefault();
-        if (values.word === "" || values.translation === "") {
+        if (!values.word || !values.translation) {
             values.word !== "" 
             ? translationRef.current.focus() 
             : wordRef.current.focus();
-            setSuccessMsg("");
+            setSuccessMsg("");        
             setErrorMsg("To add a word please fill in all fields");
             return null;
         }
@@ -73,26 +70,16 @@ function WordsListAdd(props) {
         }
     }
 
-    /* const saveItem = () => {
-        if (values.word !== "" && values.translation !== "") {
-            isSaved(true);
-        }
-    }
-
-    const cancelItem = () => {
-        isCanceled(!cancel);
-    } */
-
     return (
         <div className="wordslist__item__new">
             <div className="wordslist__item__form">
                 <p>In the form below you can add your own words in the list to learn:</p>
                 <form onSubmit={addNewWord}>
                     <label htmlFor="word">
-                        <input onChange={onChangeInput} type="text" value={values.word} name="word" className="wordslist__add wordslist__add_word" placeholder=" please add a word" ref={wordRef}></input>
+                        <input onChange={onChangeInput} type="text" value={values.word} name="word" className="wordslist__add wordslist__add_word" placeholder=" please add a word" ref={wordRef} />
                     </label>
                     <label htmlFor="translation">
-                        <input onChange={onChangeInput} type="text" value={values.translation} name="translation" className="wordslist__add wordslist__add_translation" placeholder=" please add translation" ref={translationRef}></input>
+                        <input onChange={onChangeInput} type="text" value={values.translation} name="translation" className="wordslist__add wordslist__add_translation" placeholder=" please add translation" ref={translationRef} />
                     </label>
                         <button type="submit" className="wordslist__save">Save</button>
                         <button className="wordslist__cancel">Cancel</button>
@@ -102,9 +89,6 @@ function WordsListAdd(props) {
                 {successMsg && <p className="wordslist__msg__success">{successMsg}</p>}
                 {errorMsg && <p className="wordslist__msg__error">{errorMsg}</p>}
             </div>
-            {/* {cancel ? <WordsListItem /> : null}
-            {save ? <WordsListItem word={values.word} translation={values.translation} /> : null} */}
-            {/* <tr className={"wordslist__item__box_add" + (cancel ? " hidden" : "")}></tr> */}
         </div>
     );
 }

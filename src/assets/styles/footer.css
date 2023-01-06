@@ -10,6 +10,9 @@
 .footer__links {
     margin-bottom: 1%;
 }
+.footer__links_copyright {
+    text-align: center;
+}
 .footer__links a {
     text-decoration: none;
     color: var(--header-footer-color);
