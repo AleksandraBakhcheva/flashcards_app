@@ -1,13 +1,13 @@
 :root {
 /* colors */
-    --header-footer-background: #000000;
-    --header-footer-color: #ffffff;
+    --header-footer-background: rgb(0, 0, 0);
+    --header-footer-color: rgb(255, 255, 255);
     --wordcard-background-color: rgb(194, 120, 127, 0.3);
     --word-card-button: rgba(0, 0, 255, 0.5);
-    --words-button-edit: rgba(0, 100, 0, 0.8);
-    --words-button-delete: rgb(255, 0, 0, 0.8);
+    --words-button-edit: rgb(144, 154, 0);
+    --words-button-delete: rgb(255, 0, 0);
     --arrow-left-background: rgb(255, 56, 75);
-    --arrow-right-background: rgb(0, 42, 255);
+    --arrow-right-background: rgb(105, 108, 255);
     
 /* other */
     --arrow-buttons-hover: 0 0 0 1rem rgba(0, 0, 0, 0.15);

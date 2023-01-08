@@ -2,16 +2,18 @@
     display: flex;
     position: sticky;
     top: 0;
-    height: 20vh;
+    height: 21vh;
     width: 100vw;
     align-items: center;
     background-color: var(--header-footer-background);
 }
 .header__logo {
-    height: 20.6vh;
+    height: 21vh;
+    padding: 5% 26% 0 26%;
+    background-color: var(--header-footer-color);
 }
 .header__title {
-    margin-left: 5%;
+    margin-left: 20%;
     text-transform: uppercase;
     color: var(--header-footer-color);
 }

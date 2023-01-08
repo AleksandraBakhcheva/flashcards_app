@@ -47,14 +47,14 @@ function WordsListItem(props) {
 
     return (
         <form onSubmit={editWordItem}>
-            <table>
+            <table className="wordslist__item__box">
                 <tbody>
-                    <tr className="wordslist__item__box">
-                        <td>
-                            {change ? (<input type="text" value={word} name="word" onChange={onChangeWord} />) : (<p className="item_modify">{word}</p>)}
+                    <tr>
+                        <td className="item_modify">
+                            {change ? (<input type="text" value={word} name="word" onChange={onChangeWord} />) : (<p>{word}</p>)}
                         </td>
-                        <td>
-                            {change ? (<input type="text" value={translation} name="translation" onChange={onChangeTranslation} />) : (<p className="item_modify">{translation}</p>)}
+                        <td className="item_modify">
+                            {change ? (<input type="text" value={translation} name="translation" onChange={onChangeTranslation} />) : (<p>{translation}</p>)}
                         </td>
                         <td className="item_modify buttons">
                             <button type="submit" className="wordslist__edit">

@@ -34,7 +34,7 @@ function WordsList (props) {
             <button onClick={showPrevCard} className={index < 1 ? "arrow_left_hidden" : "buttons__arrows arrow_left"}>
                 <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
             </button>
-            {!index ? <WordCard /> :
+            {index === undefined ? <WordCard /> :
             <WordCard word={words[index].word} transcription={words[index].transcription} meaning={words[index].meaning} learned={learned} onClick={calculateLearned} isClicked={words[index].isClicked} ref={ref}/>}
             <button onClick={showNextCard} className={index > words.length - 2 ?"arrow_right_hidden" : "buttons__arrows arrow_right"}>
                 <FontAwesomeIcon icon={faArrowRight} className="arrow_right_icon" />

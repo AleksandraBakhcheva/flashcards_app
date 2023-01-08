@@ -9,7 +9,7 @@ function WordslistTable() {
             <>
                 <WordsListAdd />
             </>
-            <>
+            <div className="wordslist__table_container">
                 <table className="wordslist__table">
                     <thead className="wordslist__header">
                         <tr>
@@ -23,7 +23,7 @@ function WordslistTable() {
                     data.map((item, index) =>
                     <WordsListItem key={index} word={item.word} translation={item.meaning} />)
                 }
-            </>
+            </div>
         </div>
     );
 }

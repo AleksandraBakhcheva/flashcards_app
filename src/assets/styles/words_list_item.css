@@ -1,23 +1,38 @@
 .wordslist__item__box {
     width: 100%;
-    height: 4vh;
+    height: auto;
+    margin: auto;
+    border: var(--wordcard-background-color);
+    background-color: var(--wordcard-background-color);
+}
+.item_modify {
+    width: 40%;
+    height: 7vh;
+    padding: 0;
+    font-weight: 200;
     border: var(--general-table-border);
     background-color: var(--header-footer-color);
 }
-.item_modify {
-    width: 20vw;
+.item_modify input {
+    border: none;
+    width: 98%;
+    height: 5vh;
+    outline: none;
+    color: var(--arrow-left-background);
+    border: solid 2px var(--arrow-left-background);
+}
+.item_modify p {
     padding-left: 1%;
-    font-weight: 200;
-    border: var(--general-table-border);
 }
 .buttons {
     display: flex;
-    width: 10vw;
+    width: auto;
     padding: 0;
     justify-content: flex-end;
     border: var(--general-table-border);
 }
 .wordslist__edit, .wordslist__delete {
+    width: 100%;
     margin: 2%;
     padding: 2% 3% 0 3%;
     border: var(--general-table-border);
@@ -25,8 +40,7 @@
     cursor: pointer;
 }
 .wordslist__edit_icon, .wordslist__delete_icon {
-    width: 20px;
-    height: 20px;
+    padding-right: 5%;
 }
 .wordslist__edit:hover {
     color: var(--header-footer-color);

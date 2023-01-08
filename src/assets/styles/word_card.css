@@ -41,6 +41,7 @@
     border: var(--header-footer-color);
     border-radius: var(--general-border-radius);
     cursor: pointer;
+    outline: none;
 }
 .wordcard__translation button:hover {
     color: var(--header-footer-color);

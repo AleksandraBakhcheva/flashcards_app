@@ -3,18 +3,20 @@
     justify-content: center; 
     flex-direction: column;
 }
-.wordslist__table {
-    width: 50vw;
-    height: 8vh;
+.wordslist__table_container {
+    width: 65vw;
     margin: auto;
+}
+.wordslist__table {
+    width: 100%;
+    margin: 0;
     border: var(--general-table-border);
     background-color: var(--wordcard-background-color);
 }
 .wordslist__item {
-    width: 20vw;
+    width: 40%;
+    height: 5vh;
+    padding: 0;
     border: var(--general-table-border);
     background-color: var(--header-footer-color);
-}
-.item_modification {
-    width: 10vw;
 }
