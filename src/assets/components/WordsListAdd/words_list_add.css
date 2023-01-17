@@ -18,13 +18,16 @@
     background-color: var(--header-footer-color);
     outline: none;
 }
-.wordslist__add_word, .wordslist__add_translation {
+.wordslist__add_word,
+.wordslist__add_translation {
     font-size: 0.9rem;
 }
-.wordslist__add_word:focus, .wordslist__add_translation:focus {
+.wordslist__add_word:focus,
+.wordslist__add_translation:focus {
     border: solid 3px var(--arrow-left-background);
 }
-.wordslist__save, .wordslist__cancel {
+.wordslist__save,
+.wordslist__cancel {
     width: 6vw;
     height: 4vh;
     margin: 2%;
@@ -39,10 +42,12 @@
 .wordslist__cancel {
     background-color: var(--words-button-delete);
 }
-.wordslist__save:hover, .wordslist__cancel:hover {
+.wordslist__save:hover,
+.wordslist__cancel:hover {
     color: var(--header-footer-color);
 }
-.wordslist__msg__error, .wordslist__msg__success {
+.wordslist__msg__error,
+.wordslist__msg__success {
     font-size: 0.9rem;
     text-align: center;
     color: var(--header-footer-color);

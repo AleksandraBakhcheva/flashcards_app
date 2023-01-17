@@ -9,7 +9,7 @@
     color: var(--word-card-button);
 }
 .notfound h3 {
-    color: var(--words-button-delete)
+    color: var(--words-button-delete);
 }
 .notfound__pic {
     width: 400px;

@@ -9,7 +9,11 @@
     box-shadow: var(--wordcard-box-shadow);
     background-color: var(--wordcard-background-color);
 }
-.wordcard__language, .wordcard__learned, .wordcard__word, .wordcard__transcription, .wordcard__translation {
+.wordcard__language,
+.wordcard__learned,
+.wordcard__word,
+.wordcard__transcription,
+.wordcard__translation {
     display: flex;
     justify-content: center;
 }
