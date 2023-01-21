@@ -6,8 +6,7 @@ import React, { useContext } from "react";
 import { CircularProgress } from "react-loading-indicators";
 
 function WordslistTable() {
-    const { context } = useContext(GeneralContext);
-    const { loading } = useContext(GeneralContext);
+    const { context, loading, errorMsg } = useContext(GeneralContext);
 
     if (!context) {
         return;
@@ -23,6 +22,7 @@ function WordslistTable() {
                         text="LOADING"
                         color="#b40101"
                     />
+                    <div className="loading__indicator_error">{errorMsg}</div>
                 </div>
             ) : (
                 <div className="wordslist">

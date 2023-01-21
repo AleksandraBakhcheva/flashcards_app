@@ -7,8 +7,8 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { CircularProgress } from "react-loading-indicators";
 
 function WordsList() {
-    const { context, setContext } = useContext(GeneralContext);
-    const { loading } = useContext(GeneralContext);
+    const { context, setContext, loading, errorMsg } =
+        useContext(GeneralContext);
     const [index, setIndex] = useState(0);
     const [learned, isLearned] = useState(0);
     const [cardNum, setCardNum] = useState(1);
@@ -47,6 +47,7 @@ function WordsList() {
                         text="LOADING"
                         color="#b40101"
                     />
+                    <div className="loading__indicator_error">{errorMsg}</div>
                 </div>
             ) : (
                 <div className="wordslist__cards">

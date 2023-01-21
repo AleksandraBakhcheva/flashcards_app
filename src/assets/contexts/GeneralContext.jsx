@@ -5,6 +5,7 @@ export const GeneralContext = createContext();
 export const GeneralContextProvider = ({ children }) => {
     const [context, setContext] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [errorMsg, setErrorMsg] = useState("");
 
     useEffect(() => {
         const apiUrl = "http://itgirlschool.justmakeit.ru/api/words";
@@ -15,17 +16,18 @@ export const GeneralContextProvider = ({ children }) => {
                 if (data) {
                     setContext(data);
                     setLoading(false);
-                } else {
-                    return;
                 }
             } catch (error) {
                 console.log("error", error);
+                setErrorMsg(
+                    "We have a little problem. Please refresh your page or try again later."
+                );
             }
         };
         fetchData();
     }, []);
 
-    const values = { context, setContext, loading };
+    const values = { context, setContext, loading, errorMsg };
 
     return (
         <GeneralContext.Provider value={values}>

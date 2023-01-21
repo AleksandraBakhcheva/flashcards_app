@@ -8,6 +8,7 @@
     --words-button-delete: rgb(255, 0, 0);
     --arrow-left-background: rgb(255, 56, 75);
     --arrow-right-background: rgb(105, 108, 255);
+    --error-message-color: rgb(180, 1, 1);
 
     /* other */
     --arrow-buttons-hover: 0 0 0 1rem rgba(0, 0, 0, 0.15);
