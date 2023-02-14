@@ -2,15 +2,19 @@
 @import url(https://necolas.github.io/normalize.css/latest/normalize.css);
 
 /* font-family */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 
-body {
-    font-family: 'Quicksand', sans-serif;
-}
-html, body {
+#root {
     height: 100%;
 }
-html { 
+body {
+    font-family: "Quicksand", sans-serif;
+}
+html,
+body {
+    height: 100%;
+}
+html {
     overflow-x: hidden;
 }
 .App__container {
@@ -19,6 +23,20 @@ html {
     min-height: 100%;
 }
 .container__main {
-    flex: 1 1 auto;
-    padding: 30px;
+    flex: 1 0 auto;
+}
+.loading__indicator {
+    width: fit-content;
+    margin: 5% auto;
+}
+.loading__indicator_position {
+    display: flex;
+    height: 45vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loading__indicator_error {
+    margin-top: 5%;
+    color: var(--error-message-color);
 }

@@ -31,7 +31,8 @@
     justify-content: flex-end;
     border: var(--general-table-border);
 }
-.wordslist__edit, .wordslist__delete {
+.wordslist__edit,
+.wordslist__delete {
     width: 100%;
     margin: 2%;
     padding: 2% 3% 0 3%;
@@ -39,7 +40,8 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.wordslist__edit_icon, .wordslist__delete_icon {
+.wordslist__edit_icon,
+.wordslist__delete_icon {
     padding-right: 5%;
 }
 .wordslist__edit:hover {

@@ -17,7 +17,8 @@
 .arrow_left {
     background-color: var(--arrow-left-background);
 }
-.arrow_left_icon, .arrow_right_icon {
+.arrow_left_icon,
+.arrow_right_icon {
     width: 20px;
     height: 20px;
     color: var(--header-footer-color);
@@ -35,7 +36,8 @@
     top: 83%;
     justify-content: center;
 }
-.arrow_left_hidden, .arrow_right_hidden {
+.arrow_left_hidden,
+.arrow_right_hidden {
     background-color: transparent;
     border: none;
     margin-right: 15.6%;
