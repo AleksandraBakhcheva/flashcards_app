@@ -1,26 +1,37 @@
 .notfound {
-    width: 50vw;
-    height: 55vh;
-    margin: 4% auto;
-    text-align: center;
+  width: 100vw;
+  height: 55vh;
+  margin: 4% auto;
+  text-align: center;
 }
+
 .notfound h1 {
-    font-size: 4rem;
-    color: var(--word-card-button);
+  font-size: 4rem;
+  color: var(--word-card-button);
 }
+
 .notfound h3 {
-    color: var(--words-button-delete);
+  color: var(--words-button-delete);
 }
+
 .notfound__pic {
-    width: 400px;
+  width: 400px;
 }
+
+@media screen and (max-width: 900px) {
+  .notfound__pic {
+    width: 200px;
+  }
+}
+
 .notfound__button {
-    height: 4vh;
-    border: var(--header-footer-color);
-    border-radius: var(--general-border-radius);
-    cursor: pointer;
+  height: 4vh;
+  border: var(--header-footer-color);
+  border-radius: var(--general-border-radius);
+  cursor: pointer;
 }
+
 .notfound__button:hover {
-    color: var(--header-footer-color);
-    background-color: var(--word-card-button);
+  color: var(--header-footer-color);
+  background-color: var(--word-card-button);
 }
