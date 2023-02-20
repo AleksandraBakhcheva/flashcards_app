@@ -1,11 +1,13 @@
-import "./words_list_add.css";
+import "./WordsListAdd.css";
 import { GeneralContext } from "../../contexts/GeneralContext";
 import React, { useState, useRef, useContext } from "react";
 
 function WordsListAdd(props) {
   const initialValues = {
     word: "",
+    transcription: "",
     translation: "",
+    tags: "",
   };
 
   const context = useContext(GeneralContext);

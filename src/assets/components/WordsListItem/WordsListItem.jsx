@@ -1,4 +1,4 @@
-import "./words_list_item.css";
+import "./WordsListItem.css";
 import { GeneralContext } from "../../contexts/GeneralContext";
 import React, { useState, useRef, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +10,9 @@ function WordsListItem(props) {
   const [deleteForm, setDeleteForm] = useState(false);
   const [change, setChange] = useState(false);
   const [word, setWord] = useState(props.word);
+  const [transcription, setTranscription] = useState(props.transcription);
   const [translation, setTranslation] = useState(props.translation);
+  const [tags, setTags] = useState(props.tags);
   const [id] = useState(props.id);
   const [btnName, setBtnName] = useState("Edit");
   const wordRef = useRef(word);
@@ -31,7 +33,6 @@ function WordsListItem(props) {
         russian: translation,
         id: id,
       };
-      //console.log(newWord);
       context.updateWord(newWord, id);
       wordRef.current = evt.target.word.value;
       translationRef.current = evt.target.translation.value;
@@ -44,8 +45,16 @@ function WordsListItem(props) {
     setWord(evt.target.value);
   };
 
+  const onChangeTranscription = (evt) => {
+    setTranscription(evt.target.value);
+  };
+
   const onChangeTranslation = (evt) => {
     setTranslation(evt.target.value);
+  };
+
+  const onChangeTags = (evt) => {
+    setTags(evt.target.value);
   };
 
   const onClickCancel = () => {
@@ -83,12 +92,36 @@ function WordsListItem(props) {
                   {change ? (
                     <input
                       type="text"
+                      value={transcription}
+                      name="transcription"
+                      onChange={onChangeTranscription}
+                    />
+                  ) : (
+                    <p>{transcription}</p>
+                  )}
+                </td>
+                <td className="item_modify">
+                  {change ? (
+                    <input
+                      type="text"
                       value={translation}
                       name="translation"
                       onChange={onChangeTranslation}
                     />
                   ) : (
                     <p>{translation}</p>
+                  )}
+                </td>
+                <td className="item_modify">
+                  {change ? (
+                    <input
+                      type="text"
+                      value={tags}
+                      name="tags"
+                      onChange={onChangeTags}
+                    />
+                  ) : (
+                    <p>{tags}</p>
                   )}
                 </td>
                 <td className="item_modify buttons">

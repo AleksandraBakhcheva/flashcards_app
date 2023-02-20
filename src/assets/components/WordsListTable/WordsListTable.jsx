@@ -1,4 +1,4 @@
-import "./words_list_table.css";
+import "./WordsListTable.css";
 import WordsListItem from "../WordsListItem/WordsListItem";
 import WordsListAdd from "../WordsListAdd/WordsListAdd";
 import { GeneralContext } from "../../contexts/GeneralContext";
@@ -34,7 +34,9 @@ function WordslistTable() {
               <thead className="wordslist__header">
                 <tr>
                   <th className="wordslist__item">Word</th>
+                  <th className="wordslist__item">Transcription</th>
                   <th className="wordslist__item">Translation</th>
+                  <th className="wordslist__item">Tags</th>
                   <th className="wordslist__item item_modification"></th>
                 </tr>
               </thead>
@@ -43,7 +45,9 @@ function WordslistTable() {
               <WordsListItem
                 key={item.id}
                 word={item.english}
+                transcription={item.transcription}
                 translation={item.russian}
+                tags={item.tags}
                 id={item.id}
               />
             ))}

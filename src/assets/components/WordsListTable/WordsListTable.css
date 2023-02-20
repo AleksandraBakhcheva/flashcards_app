@@ -1,0 +1,22 @@
+.wordslist {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wordslist__table_container {
+  width: 90vw;
+  margin: auto;
+}
+.wordslist__table {
+  width: 100%;
+  margin: 0;
+  border: var(--general-table-border);
+  background-color: var(--wordcard-background-color);
+}
+.wordslist__item {
+  width: 20%;
+  height: 5vh;
+  padding: 0;
+  border: var(--general-table-border);
+  background-color: var(--header-footer-color);
+}
