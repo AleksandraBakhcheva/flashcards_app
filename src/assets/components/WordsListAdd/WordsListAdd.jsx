@@ -92,8 +92,19 @@ function WordsListAdd(props) {
               type="text"
               value={values.word}
               name="word"
-              className="wordslist__add wordslist__add_word"
-              placeholder=" please add a word"
+              className="wordslist__addInput"
+              placeholder=" word"
+              ref={wordRef}
+            />
+          </label>
+          <label htmlFor="transcription">
+            <input
+              onChange={onChangeInput}
+              type="text"
+              value={values.transcription}
+              name="transcription"
+              className="wordslist__addInput"
+              placeholder=" transcription"
               ref={wordRef}
             />
           </label>
@@ -103,15 +114,28 @@ function WordsListAdd(props) {
               type="text"
               value={values.translation}
               name="translation"
-              className="wordslist__add wordslist__add_translation"
-              placeholder=" please add translation"
+              className="wordslist__addInput"
+              placeholder=" translation"
               ref={translationRef}
             />
           </label>
-          <button type="submit" className="wordslist__save">
-            Save
-          </button>
-          <button className="wordslist__cancel">Cancel</button>
+          <label htmlFor="tags">
+            <input
+              onChange={onChangeInput}
+              type="text"
+              value={values.tags}
+              name="tags"
+              className="wordslist__addInput"
+              placeholder=" tags"
+              ref={wordRef}
+            />
+          </label>
+          <div>
+            <button type="submit" className="wordslist__save">
+              Save
+            </button>
+            <button className="wordslist__cancel">Cancel</button>
+          </div>
         </form>
       </div>
       <div>
