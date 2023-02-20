@@ -5,6 +5,12 @@
   background-color: var(--wordcard-background-color);
 }
 
+@media screen and (max-width: 900px) {
+  .wordslist__item__new {
+    margin-bottom: 3%;
+  }
+}
+
 .wordslist__item__new p {
   margin-bottom: 0;
 }
@@ -50,6 +56,12 @@
 
 .wordslist__addInput:focus {
   border: solid 3px var(--arrow-left-background);
+}
+
+@media screen and (max-width: 900px) {
+  .wordslist__addInput:focus {
+    border: solid 1px var(--arrow-left-background);
+  }
 }
 
 .wordslist__save,
