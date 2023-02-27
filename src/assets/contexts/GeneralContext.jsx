@@ -3,13 +3,15 @@ import { createContext, useState, useEffect } from "react";
 export const GeneralContext = createContext();
 
 export const GeneralContextProvider = ({ children }) => {
+  const apiData =
+    "https://63fb529e2027a45d8d645065.mockapi.io/api/v1/flashcards/";
   const [context, setContext] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
 
   async function loadData() {
     try {
-      const wordsCollection = await fetch("/api/words", {
+      const wordsCollection = await fetch(apiData, {
         method: "GET",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
@@ -30,7 +32,7 @@ export const GeneralContextProvider = ({ children }) => {
 
   async function addWord(newWord) {
     try {
-      const wordsCollection = await fetch("/api/words/add", {
+      const wordsCollection = await fetch(apiData, {
         method: "POST",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
@@ -50,8 +52,8 @@ export const GeneralContextProvider = ({ children }) => {
 
   async function deleteWord(id) {
     try {
-      await fetch(`/api/words/${id}/delete`, {
-        method: "POST",
+      await fetch(`${apiData}${id}`, {
+        method: "DELETE",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
         },
@@ -67,8 +69,8 @@ export const GeneralContextProvider = ({ children }) => {
 
   async function updateWord(newWord) {
     try {
-      const wordsCollection = await fetch(`/api/words/${newWord.id}/update`, {
-        method: "POST",
+      const wordsCollection = await fetch(`${apiData}${newWord.id}`, {
+        method: "PUT",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
         },

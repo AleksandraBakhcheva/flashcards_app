@@ -44,9 +44,9 @@ function WordslistTable() {
             {context.map((item) => (
               <WordsListItem
                 key={item.id}
-                word={item.english}
+                word={item.word}
                 transcription={item.transcription}
-                translation={item.russian}
+                translation={item.translation}
                 tags={item.tags}
                 id={item.id}
               />

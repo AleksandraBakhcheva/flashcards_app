@@ -34,8 +34,10 @@ function WordsListAdd(props) {
       setErrorMsg("");
       setSuccessMsg("Your word has been successfully added");
       const newWord = {
-        english: values.word,
-        russian: values.translation,
+        word: values.word,
+        transcription: values.transcription,
+        translation: values.translation,
+        tags: values.tags,
       };
       context.addWord(newWord);
     }

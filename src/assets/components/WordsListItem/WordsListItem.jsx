@@ -29,8 +29,10 @@ function WordsListItem(props) {
       setWord(evt.target.word.value);
       setTranslation(evt.target.translation.value);
       const newWord = {
-        english: word,
-        russian: translation,
+        word: word,
+        transcription: transcription,
+        translation: translation,
+        tags: tags,
         id: id,
       };
       context.updateWord(newWord, id);

@@ -62,9 +62,9 @@ function WordsList() {
             <WordCard />
           ) : (
             <WordCard
-              word={context[index].english}
+              word={context[index].word}
               transcription={context[index].transcription}
-              meaning={context[index].russian}
+              meaning={context[index].translation}
               learned={learned}
               onClick={calculateLearned}
               isClicked={context[index].isClicked}
