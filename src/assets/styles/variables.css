@@ -1,18 +1,18 @@
 :root {
-    /* colors */
-    --header-footer-background: rgb(0, 0, 0);
-    --header-footer-color: rgb(255, 255, 255);
-    --wordcard-background-color: rgb(194, 120, 127, 0.3);
-    --word-card-button: rgba(0, 0, 255, 0.5);
-    --words-button-edit: rgb(144, 154, 0);
-    --words-button-delete: rgb(255, 0, 0);
-    --arrow-left-background: rgb(255, 56, 75);
-    --arrow-right-background: rgb(105, 108, 255);
-    --error-message-color: rgb(180, 1, 1);
+  /* colors */
+  --header-footer-background: rgb(0, 0, 0);
+  --header-footer-color: rgb(255, 255, 255);
+  --wordcard-background-color: rgb(194, 120, 127, 0.3);
+  --word-card-button: rgba(0, 0, 255, 0.5);
+  --words-button-edit: rgb(144, 154, 0);
+  --words-button-delete: rgb(255, 0, 0);
+  --arrow-left-background: rgb(255, 56, 75);
+  --arrow-right-background: rgb(105, 108, 255);
+  --error-message-color: rgb(180, 1, 1);
 
-    /* other */
-    --arrow-buttons-hover: 0 0 0 1rem rgba(0, 0, 0, 0.15);
-    --wordcard-box-shadow: rgba(194, 120, 127, 0.4) 0px 5px 15px;
-    --general-border-radius: 10px;
-    --general-table-border: 1px solid #000000;
+  /* other */
+  --arrow-buttons-hover: 0 0 0 1rem rgba(0, 0, 0, 0.15);
+  --wordcard-box-shadow: rgba(194, 120, 127, 0.4) 0px 5px 15px;
+  --general-border-radius: 15px;
+  --general-table-border: 1px solid #000000;
 }

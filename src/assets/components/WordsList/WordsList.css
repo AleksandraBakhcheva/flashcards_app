@@ -1,47 +1,37 @@
 .wordslist__cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50vw;
-    height: 50vh;
-    margin: 4% auto;
+  display: flex;
+  justify-content: center;
+  width: 60vw;
 }
+
 .buttons__arrows {
-    width: 45px;
-    height: 45px;
-    margin: auto;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
 }
+
 .arrow_left {
-    background-color: var(--arrow-left-background);
+  background-color: var(--arrow-left-background);
 }
-.arrow_left_icon,
-.arrow_right_icon {
-    width: 20px;
-    height: 20px;
-    color: var(--header-footer-color);
+
+.arrow__icon {
+  width: 20px;
+  height: 20px;
+  color: var(--header-footer-color);
 }
+
 .arrow_right {
-    background-color: var(--arrow-right-background);
+  background-color: var(--arrow-right-background);
 }
+
 .buttons__arrows:hover {
-    box-shadow: var(--arrow-buttons-hover);
+  box-shadow: var(--arrow-buttons-hover);
 }
+
 .wordslist__index {
-    display: flex;
-    position: absolute;
-    height: fit-content;
-    top: 83%;
-    justify-content: center;
-}
-.arrow_left_hidden,
-.arrow_right_hidden {
-    background-color: transparent;
-    border: none;
-    margin-right: 15.6%;
-}
-.arrow_right_hidden {
-    margin-right: 15.5%;
+  position: absolute;
+  top: 90%;
 }

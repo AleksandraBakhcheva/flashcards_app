@@ -3,12 +3,14 @@ import React, { forwardRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const WordCard = forwardRef(function WordCard(props, ref) {
-  const { word, transcription, meaning, learned, onClick, isClicked } = props;
+  const { word, transcription, translation, learned, onClick, isClicked } =
+    props;
 
   WordCard.defaultProps = {
     word: "word",
     transcription: "[wɜːd]",
-    meaning: "слово, известие, речь",
+    translation: "слово, известие, речь",
+    tags: "языки",
   };
 
   const getTranslation = () => {
@@ -19,7 +21,6 @@ const WordCard = forwardRef(function WordCard(props, ref) {
 
   return (
     <motion.div
-      className="wordcard"
       animate={{
         scale: [1, 1.2, 1.2, 1, 1],
         rotate: [0, 360, 0],
@@ -35,7 +36,7 @@ const WordCard = forwardRef(function WordCard(props, ref) {
         <div className="wordcard__translation">
           {isClicked ? (
             <p ref={ref} className="translation">
-              {meaning}
+              {translation}
             </p>
           ) : (
             <motion.button

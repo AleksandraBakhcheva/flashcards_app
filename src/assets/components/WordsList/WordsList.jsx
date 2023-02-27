@@ -10,7 +10,6 @@ function WordsList() {
   const { context, setContext, loading, errorMsg } = useContext(GeneralContext);
   const [index, setIndex] = useState(0);
   const [learned, isLearned] = useState(0);
-  const [cardNum, setCardNum] = useState(1);
   const ref = useRef();
 
   if (!context) {
@@ -18,14 +17,20 @@ function WordsList() {
   }
 
   const showPrevCard = () => {
-    setIndex(index - 1);
-    setCardNum(cardNum - 1);
+    if (index === 0) {
+      setIndex(context.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
     ref.current.focus();
   };
 
   const showNextCard = () => {
-    setIndex(index + 1);
-    setCardNum(cardNum + 1);
+    if (index === context.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
     ref.current.focus();
   };
 
@@ -50,13 +55,8 @@ function WordsList() {
         </div>
       ) : (
         <div className="wordslist__cards">
-          <button
-            onClick={showPrevCard}
-            className={
-              cardNum === 1 ? "arrow_left_hidden" : "buttons__arrows arrow_left"
-            }
-          >
-            <FontAwesomeIcon icon={faArrowLeft} className="arrow_left_icon" />
+          <button onClick={showPrevCard} className="buttons__arrows arrow_left">
+            <FontAwesomeIcon icon={faArrowLeft} className="arrow__icon" />
           </button>
           {index === undefined ? (
             <WordCard />
@@ -64,7 +64,7 @@ function WordsList() {
             <WordCard
               word={context[index].word}
               transcription={context[index].transcription}
-              meaning={context[index].translation}
+              translation={context[index].translation}
               learned={learned}
               onClick={calculateLearned}
               isClicked={context[index].isClicked}
@@ -73,16 +73,12 @@ function WordsList() {
           )}
           <button
             onClick={showNextCard}
-            className={
-              cardNum === context.length
-                ? "arrow_right_hidden"
-                : "buttons__arrows arrow_right"
-            }
+            className="buttons__arrows arrow_right"
           >
-            <FontAwesomeIcon icon={faArrowRight} className="arrow_right_icon" />
+            <FontAwesomeIcon icon={faArrowRight} className="arrow__icon" />
           </button>
           <div className="wordslist__index">
-            {cardNum + "/" + context.length}
+            {index + 1 + "/" + context.length}
           </div>
         </div>
       )}
