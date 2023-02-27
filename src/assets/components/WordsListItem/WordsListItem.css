@@ -38,15 +38,13 @@
   display: flex;
   width: auto;
   height: 7vh;
-  padding: 0;
-  justify-content: flex-end;
   border: var(--general-table-border);
 }
 
 .wordslist__edit,
-.wordslist__delete {
+.wordslist__delete_cancel {
   width: 100%;
-  margin: 2%;
+  margin: 1% 0.5%;
   border: var(--general-table-border);
   border-radius: 5px;
   cursor: pointer;
@@ -59,7 +57,7 @@
 
 @media screen and (max-width: 900px) {
   .wordslist__edit_icon,
-  .wordslist__delete_icon {
+  .wordslist__delete_cancel_icon {
     display: none;
   }
 }
@@ -69,7 +67,7 @@
   background-color: var(--words-button-edit);
 }
 
-.wordslist__delete:hover {
+.wordslist__delete_cancel:hover {
   color: var(--header-footer-color);
   background-color: var(--words-button-delete);
 }

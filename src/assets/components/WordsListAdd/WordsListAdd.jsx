@@ -132,7 +132,7 @@ function WordsListAdd(props) {
               ref={wordRef}
             />
           </label>
-          <div>
+          <div className="wordslist__buttons">
             <button type="submit" className="wordslist__save">
               Save
             </button>

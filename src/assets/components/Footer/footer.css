@@ -8,26 +8,32 @@
   color: var(--header-footer-color);
   background-color: var(--header-footer-background);
 }
+
 .footer__links {
   margin: 2%;
 }
+
 .footer__links_copyright {
   padding-bottom: 2%;
   text-align: center;
 }
+
 .footer__links a {
   text-decoration: none;
   color: var(--header-footer-color);
 }
+
 .footer__links_highlighted:hover {
   height: 2.5vh;
   color: var(--header-footer-background);
   background-color: var(--header-footer-color);
 }
+
 .footer__links_github {
   margin: 1%;
   text-align: center;
 }
+
 .github_icon {
   width: 20px;
   height: 20px;

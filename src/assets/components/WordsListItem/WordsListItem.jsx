@@ -137,7 +137,7 @@ function WordsListItem(props) {
                   <button
                     type="button"
                     hidden={change}
-                    className="wordslist__delete"
+                    className="wordslist__delete_cancel"
                     onClick={onClickDelete}
                   >
                     <FontAwesomeIcon
@@ -149,7 +149,7 @@ function WordsListItem(props) {
                   <button
                     type="button"
                     hidden={!change}
-                    className="wordslist__delete"
+                    className="wordslist__delete_cancel"
                     onClick={onClickCancel}
                   >
                     <FontAwesomeIcon
