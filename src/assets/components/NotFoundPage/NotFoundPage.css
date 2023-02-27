@@ -25,7 +25,8 @@
 }
 
 .notfound__button {
-  height: 4vh;
+  height: 20%;
+  padding: 1%;
   border: var(--header-footer-color);
   border-radius: var(--general-border-radius);
   cursor: pointer;
