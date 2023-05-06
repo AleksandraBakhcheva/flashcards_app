@@ -3,7 +3,7 @@
 Application for learning new English words 🔠
 
 ## Description
-This app allows users learning new English words using flashcards. The initial words list is received from API and the user can edit or add new words in it. There is also option for the user to show or hide every word translation and counter for learned words. The user can scroll through the cards using the carousel buttons.
+This app allows users learning new English words using flashcards. The initial words list is received from API and the user can edit or add new words in it. There is also option for the user to show or hide every word translation and see the counter for learned words. The user can scroll through the cards using the carousel buttons.
 
 ## Screens
 
