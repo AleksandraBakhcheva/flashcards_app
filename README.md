@@ -1,13 +1,26 @@
-## in progress...
+# Fill up your vocabulary with new words
 
-# App for learning English words
+Application for learning new English words 🔠
 
-_This app allows users learning new English words using flashcards. The initial words list is received from API and the user can edit or add new words in it. There is also option for the user to show or hide every word translation and counter for learned words. The user can scroll through the cards using the carousel buttons._
+## Description
+This app allows users learning new English words using flashcards. The initial words list is received from API and the user can edit or add new words in it. There is also option for the user to show or hide every word translation and counter for learned words. The user can scroll through the cards using the carousel buttons.
 
-## :arrow_right: [Demo](https://aleksandrabakhcheva.github.io/flashcards_app/)
+## Screens
 
-### Technologies used: React, JS ES6, HTML5, CSS3, Webpack
+## Technology stack 
+<img align="left" alt="React" width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />&nbsp;
+<img align="left" alt="HTML5" width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />&nbsp;
+<img align="left" alt="CSS3" width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />&nbsp;
+<img align="left" alt="MobX" width="40" height="40" src="https://user-images.githubusercontent.com/76097160/236642472-b5beae48-2997-4751-9def-0d6d32457782.png" style="padding-right:10px;" />&nbsp;
+<img align="left" alt="Visual Studio Code" width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />&nbsp;
+<img align="left" alt="Git" width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="padding-right:10px;" />&nbsp;
+[<img align="left" alt="GitHub" width="40px" height="40" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" style="padding-right:10px;" />](https://www.youtube.com/playlist?list=PLkwxH9e_vrAJ0WbEsFA9W3I1W-g_BTsbt#gh-dark-mode-only)&nbsp;
+[<img align="left" alt="GitHub" width="40px" height="40" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png" style="padding-right:10px;" />](https://www.youtube.com/playlist?list=PLkwxH9e_vrAJ0WbEsFA9W3I1W-g_BTsbt#gh-light-mode-only)&nbsp;
 
-<img src="https://uploads-ssl.webflow.com/60a2acace1fd91aae61c497d/60ee04a3dee9b428a836325f_React_logo_logotype_emblem-p-1080.png" width="49"><img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-1024.png" width="55"><img src="https://www.bryan-myers.com/images/1x1/html5.png" width="50"><img src="https://schtirlitz.ru/800/600/https/pitercss.ru/32/pres/custom-props/pictures/css_logo.png" width="43"><img src="https://static.tildacdn.com/tild6665-3139-4462-b436-653231663961/webpack.svg" width="50">
+<br />
 
-### © by [Aleksandra Bakhcheva](https://github.com/AleksandraBakhcheva)
+## Author
+[@Aleksandra Bakhcheva](https://github.com/AleksandraBakhcheva)
+
+## Project demo
+<a target="_blank" href="https://aleksandrabakhcheva.github.io/flashcards_app/">Click Demo</a>
