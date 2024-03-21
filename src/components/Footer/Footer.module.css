@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+  text-align: center;
+  color: var(--header-footer-color);
+  background-color: var(--header-footer-background);
+}
+
+.links div {
+  padding: 1% 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--header-footer-color);
+}
+
+.links a:hover {
+  color: var(--header-footer-background);
+  background-color: var(--header-footer-color);
+}
