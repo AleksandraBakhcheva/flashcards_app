@@ -16,7 +16,7 @@ export const Footer = () => {
           </a>
         </div>
         <div>
-          by
+          by{" "}
           <a href="https://github.com/AleksandraBakhcheva" target="new__link">
             Aleksandra Bakhcheva
           </a>
