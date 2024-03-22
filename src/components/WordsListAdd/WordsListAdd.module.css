@@ -1,0 +1,90 @@
+.container {
+  max-width: 90%;
+  margin: 2% auto;
+  padding: 1%;
+  background-color: var(--wordcard-background-color);
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 0;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.inputs input {
+  height: 30px;
+  border: var(--general-table-border);
+  background-color: var(--header-footer-color);
+  outline: none;
+  font-size: 0.9rem;
+  text-indent: 10px;
+  border: solid 2px transparent;
+}
+
+.inputs input::placeholder {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.inputs input:focus {
+  border: solid 2px var(--arrow-left-background);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.add,
+.cancel {
+  width: 70px;
+  margin: 2%;
+  padding: 1%;
+  border: var(--general-table-border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add {
+  margin-right: 3%;
+  background-color: var(--words-button-edit);
+}
+
+.cancel {
+  background-color: var(--words-button-delete);
+}
+
+.add:hover,
+.cancel:hover {
+  color: var(--header-footer-color);
+}
+
+.msg,
+.success,
+.error {
+  margin: 1% 0;
+  padding: 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .msg,
+  .success,
+  .error {
+    font-size: 0.7rem;
+  }
+}
+
+.success,
+.error {
+  color: var(--header-footer-color);
+}
+
+.success {
+  background-color: var(--words-button-edit);
+}
+
+.error {
+  background-color: var(--arrow-left-background);
+}
