@@ -1,0 +1,83 @@
+.container {
+  width: 350px;
+  height: 350px;
+  border-radius: var(--general-border-radius);
+  box-shadow: var(--wordcard-box-shadow);
+  background-color: var(--wordcard-background-color);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 250px;
+    height: 260px;
+  }
+}
+
+.card_info,
+.card_translation,
+.card_index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_info h3,
+.card_info h4 {
+  text-transform: uppercase;
+  color: var(--header-footer-color);
+}
+
+.card_info h3 {
+  padding: 4%;
+}
+
+.card_info h4 {
+  padding: 1%;
+  background-color: var(--words-button-edit);
+}
+
+.card_info h1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15%;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .card_info h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.card_translation {
+  padding: 9% 5%;
+  align-items: flex-end;
+}
+
+.card_translation button {
+  padding: 1.5%;
+  border: var(--header-footer-color);
+  border-radius: var(--general-border-radius);
+  cursor: pointer;
+  outline: none;
+}
+
+.card_translation button:hover {
+  color: var(--header-footer-color);
+  background-color: var(--arrow-left-background);
+}
+
+.card_translation button:focus {
+  background-color: var(--arrow-left-background);
+}
+
+.card_translation p {
+  padding: 2%;
+  color: var(--header-footer-color);
+  background-color: var(--word-card-button);
+}
+
+.card_index {
+  margin-top: 2%;
+}
