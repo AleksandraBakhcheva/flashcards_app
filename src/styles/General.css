@@ -1,0 +1,43 @@
+/* normalize.css */
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+/* font-family */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+/* variables */
+@import "./Variables.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
