@@ -1,0 +1,33 @@
+.container {
+  padding: 1%;
+  text-align: center;
+}
+
+.container h1 {
+  margin-top: 0;
+  font-size: 4rem;
+  color: var(--word-card-button);
+}
+
+.container h3 {
+  text-transform: uppercase;
+  color: var(--words-button-delete);
+}
+
+.container img {
+  max-width: 300px;
+}
+
+.container button {
+  height: 20%;
+  padding: 1%;
+  text-transform: uppercase;
+  border: var(--header-footer-color);
+  border-radius: var(--general-border-radius);
+  cursor: pointer;
+}
+
+.container button:hover {
+  color: var(--header-footer-color);
+  background-color: var(--word-card-button);
+}
