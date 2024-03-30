@@ -17,6 +17,18 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -40,4 +52,8 @@ main {
   justify-content: center;
   align-items: center;
   flex: 1 1 auto;
+}
+
+button {
+  transition: all 0.3s ease-out;
 }

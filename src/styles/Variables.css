@@ -1,0 +1,18 @@
+:root {
+  /* colors */
+  --general-color-black: #000000;
+  --general-color-white: #ffffff;
+  --general-color-pink: #c2787f4d;
+  --dark-color-blue: #0000ff80;
+  --general-color-yellow-green: #909a00;
+  --light-color-red: #ff0000;
+  --light-color-red-other: #ff384b;
+  --light-color-blue: #696cff;
+  --dark-color-red: #b40101;
+
+  /* other */
+  --arrow-buttons-hover: 0 0 0 1rem #00000026;
+  --wordcard-box-shadow: #c2787f66 0px 5px 15px;
+  --general-border-radius: 5px;
+  --general-table-border: 1px solid #000000;
+}
