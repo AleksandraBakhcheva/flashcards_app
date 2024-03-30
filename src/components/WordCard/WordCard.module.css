@@ -1,15 +1,15 @@
 .container {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: var(--general-border-radius);
   box-shadow: var(--wordcard-box-shadow);
-  background-color: var(--wordcard-background-color);
+  background-color: var(--general-color-pink);
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 250px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -25,7 +25,7 @@
 .card_info h3,
 .card_info h4 {
   text-transform: uppercase;
-  color: var(--header-footer-color);
+  color: var(--general-color-white);
 }
 
 .card_info h3 {
@@ -34,20 +34,14 @@
 
 .card_info h4 {
   padding: 1%;
-  background-color: var(--words-button-edit);
+  background-color: var(--general-color-yellow-green);
 }
 
 .card_info h1 {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 15%;
+  flex-wrap: wrap;
   font-size: 2rem;
-}
-
-@media screen and (max-width: 480px) {
-  .card_info h1 {
-    font-size: 1.5rem;
-  }
 }
 
 .card_translation {
@@ -57,27 +51,23 @@
 
 .card_translation button {
   padding: 1.5%;
-  border: var(--header-footer-color);
+  border: var(--general-color-white);
   border-radius: var(--general-border-radius);
   cursor: pointer;
   outline: none;
 }
 
 .card_translation button:hover {
-  color: var(--header-footer-color);
-  background-color: var(--arrow-left-background);
+  color: var(--general-color-white);
+  background-color: var(--light-color-red-other);
 }
 
 .card_translation button:focus {
-  background-color: var(--arrow-left-background);
+  background-color: var(--light-color-red-other);
 }
 
 .card_translation p {
   padding: 2%;
-  color: var(--header-footer-color);
-  background-color: var(--word-card-button);
-}
-
-.card_index {
-  margin-top: 2%;
+  color: var(--general-color-white);
+  background-color: var(--dark-color-blue);
 }

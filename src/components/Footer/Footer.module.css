@@ -3,8 +3,14 @@
   padding: 1%;
   justify-content: center;
   text-align: center;
-  color: var(--header-footer-color);
-  background-color: var(--header-footer-background);
+  color: var(--general-color-white);
+  background-color: var(--general-color-black);
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 3%;
+  }
 }
 
 .links div {
@@ -13,10 +19,10 @@
 
 .links a {
   text-decoration: none;
-  color: var(--header-footer-color);
+  color: var(--general-color-white);
 }
 
 .links a:hover {
-  color: var(--header-footer-background);
-  background-color: var(--header-footer-color);
+  color: var(--general-color-black);
+  background-color: var(--general-color-white);
 }
