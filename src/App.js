@@ -1,10 +1,9 @@
-import "./assets/styles/General.css";
-import "./assets/styles/Variables.css";
-import Layout from "./assets/components/Layout/Layout";
-import NotFoundPage from "./assets/components/NotFoundPage/NotFoundPage";
-import WordslistTable from "./assets/components/WordsListTable/WordsListTable";
-import WordsList from "./assets/components/WordsList/WordsList";
-import { GeneralContextProvider } from "./assets/contexts/GeneralContext";
+import "./styles/General.css";
+import { Layout } from "./components/Layout/Layout";
+import { NotFoundPage } from "./components/NotFoundPage/NotFoundPage";
+import { WordslistTable } from "./components/WordsListTable/WordsListTable";
+import { WordsList } from "./components/WordsList/WordsList";
+import { GeneralContextProvider } from "./contexts/GeneralContext";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
