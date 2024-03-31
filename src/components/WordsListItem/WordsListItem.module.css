@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  width: 100%;
+  gap: 2px;
+}
+
+.container p {
+  display: flex;
+  width: 20%;
+  padding-left: 1%;
+  align-items: center;
+  border: var(--general-table-border);
+  background-color: var(--general-color-white);
+}
+
+.input {
+  width: 20%;
+  padding-left: 1%;
+  border: none;
+  outline: none;
+  color: var(--light-color-red-other);
+  border: solid 2px var(--light-color-red-other);
+}
+
+.buttons {
+  display: flex;
+  width: 20%;
+  gap: 2px;
+}
+
+.btn_edit,
+.btn_delete_cancel {
+  width: 100%;
+  padding: 4%;
+  border: var(--general-table-border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .btn_edit,
+  .btn_delete_cancel {
+    padding: 10% 0;
+  }
+}
+
+.icon {
+  padding-right: 5%;
+}
+
+@media screen and (max-width: 900px) {
+  .icon {
+    display: none;
+  }
+}
+
+.btn_edit:hover {
+  color: var(--general-color-white);
+  background-color: var(--general-color-yellow-green);
+}
+
+.btn_delete_cancel:hover {
+  color: var(--general-color-white);
+  background-color: var(--light-color-red);
+}
