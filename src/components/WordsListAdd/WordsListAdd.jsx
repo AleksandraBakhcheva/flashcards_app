@@ -1,6 +1,6 @@
 import styles from "./WordsListAdd.module.css";
 import { GeneralContext } from "../../contexts/GeneralContext";
-import React, { useState, useRef, useContext } from "react";
+import { useState, useRef, useContext } from "react";
 
 export const WordsListAdd = () => {
   const initialValues = {
@@ -107,72 +107,70 @@ export const WordsListAdd = () => {
   return (
     <div className={styles.container}>
       <div>
-        <div>
-          <p
-            className={
-              successMsg ? styles.success : errorMsg ? styles.error : styles.msg
-            }
-          >
-            {successMsg ? successMsg : errorMsg ? errorMsg : msg}
-          </p>
-        </div>
-        <form onSubmit={addNewWord}>
-          <div className={styles.inputs}>
-            <label htmlFor="word">
-              <input
-                onChange={onChangeInput}
-                type="text"
-                value={values.word}
-                name="word"
-                placeholder="word"
-                ref={wordRef}
-              />
-            </label>
-            <label htmlFor="transcription">
-              <input
-                onChange={onChangeInput}
-                type="text"
-                value={values.transcription}
-                name="transcription"
-                placeholder="transcription"
-                ref={transcriptionRef}
-              />
-            </label>
-            <label htmlFor="translation">
-              <input
-                onChange={onChangeInput}
-                type="text"
-                value={values.translation}
-                name="translation"
-                placeholder="translation"
-                ref={translationRef}
-              />
-            </label>
-            <label htmlFor="tags">
-              <input
-                onChange={onChangeInput}
-                type="text"
-                value={values.tags}
-                name="tags"
-                placeholder="tags"
-                ref={tagsRef}
-              />
-            </label>
-          </div>
-          <div className={styles.buttons}>
-            <button type="submit" className={styles.add}>
-              Add
-            </button>
-            <button
-              className={styles.cancel}
-              type="button"
-              onClick={eraseAllInputs}
-            >
-              Cancel
-            </button>
-          </div>
-        </form>
+        <p
+          className={
+            successMsg ? styles.success : errorMsg ? styles.error : styles.msg
+          }
+        >
+          {successMsg ? successMsg : errorMsg ? errorMsg : msg}
+        </p>
       </div>
+      <form onSubmit={addNewWord}>
+        <div className={styles.inputs}>
+          <label htmlFor="word">
+            <input
+              onChange={onChangeInput}
+              type="text"
+              value={values.word}
+              name="word"
+              placeholder="word"
+              ref={wordRef}
+            />
+          </label>
+          <label htmlFor="transcription">
+            <input
+              onChange={onChangeInput}
+              type="text"
+              value={values.transcription}
+              name="transcription"
+              placeholder="transcription"
+              ref={transcriptionRef}
+            />
+          </label>
+          <label htmlFor="translation">
+            <input
+              onChange={onChangeInput}
+              type="text"
+              value={values.translation}
+              name="translation"
+              placeholder="translation"
+              ref={translationRef}
+            />
+          </label>
+          <label htmlFor="tags">
+            <input
+              onChange={onChangeInput}
+              type="text"
+              value={values.tags}
+              name="tags"
+              placeholder="tags"
+              ref={tagsRef}
+            />
+          </label>
+        </div>
+        <div className={styles.buttons}>
+          <button type="submit" className={styles.add}>
+            Add
+          </button>
+          <button
+            className={styles.cancel}
+            type="button"
+            onClick={eraseAllInputs}
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
     </div>
   );
 };
