@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  padding: 2%;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container table {
+  width: 100%;
+  margin-top: 2%;
+  border: var(--general-table-border);
+  background-color: var(--general-color-pink);
+}
+
+.headers {
+  display: flex;
+  width: 80%;
+  gap: 2px;
+}
+
+.headers th {
+  width: 25%;
+  padding: 1%;
+  border: var(--general-table-border);
+  background-color: #e2e6ff;
+}
+
+@media screen and (max-width: 900px) {
+  .headers th {
+    padding: 2%;
+  }
+}
