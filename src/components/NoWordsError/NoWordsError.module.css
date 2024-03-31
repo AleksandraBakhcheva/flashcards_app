@@ -1,0 +1,30 @@
+.container {
+  padding: 1%;
+  text-align: center;
+}
+
+.container h1 {
+  margin-top: 0;
+  font-size: 4rem;
+  color: var(--dark-color-blue);
+}
+
+.container h3 {
+  text-transform: uppercase;
+  color: var(--light-color-red);
+}
+
+.container button {
+  margin-top: 2%;
+  height: 20%;
+  padding: 1%;
+  text-transform: uppercase;
+  border: var(--general-color-white);
+  border-radius: var(--general-border-radius);
+  cursor: pointer;
+}
+
+.container button:hover {
+  color: var(--general-color-white);
+  background-color: var(--dark-color-blue);
+}
