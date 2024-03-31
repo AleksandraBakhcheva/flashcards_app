@@ -8,6 +8,7 @@ export const GeneralContextProvider = ({ children }) => {
   const [context, setContext] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
+  const [learned, isLearned] = useState(0);
 
   async function loadData() {
     try {
@@ -58,6 +59,7 @@ export const GeneralContextProvider = ({ children }) => {
           "Content-Type": "application/json; charset=utf-8",
         },
       });
+      loadData();
     } catch (error) {
       console.log("error", error);
       setLoading(true);
@@ -76,6 +78,7 @@ export const GeneralContextProvider = ({ children }) => {
         },
         body: JSON.stringify(newWord),
       });
+      loadData();
     } catch (error) {
       console.log("error", error);
       setLoading(true);
@@ -84,6 +87,10 @@ export const GeneralContextProvider = ({ children }) => {
       );
     }
   }
+
+  const updateLearned = () => {
+    isLearned(learned + 1);
+  };
 
   useEffect(() => {
     loadData();
@@ -97,6 +104,8 @@ export const GeneralContextProvider = ({ children }) => {
     addWord,
     deleteWord,
     updateWord,
+    learned,
+    updateLearned,
   };
 
   return (
