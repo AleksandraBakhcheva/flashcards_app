@@ -63,3 +63,9 @@
   color: var(--general-color-white);
   background-color: var(--light-color-red);
 }
+
+.error {
+  margin: 2px;
+  color: var(--general-color-white);
+  background-color: var(--light-color-red-other);
+}
