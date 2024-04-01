@@ -28,14 +28,13 @@ export const WordsListAdd = () => {
       !values.translation ||
       !values.tags
     ) {
-      values.translation
-        ? tagsRef.current.focus()
-        : values.transcription
-        ? translationRef.current.focus() &&
-          validateTranslation(values.translation)
-        : values.word && validateWord(values.word)
+      !values.word
+        ? wordRef.current.focus()
+        : !values.transcription
         ? transcriptionRef.current.focus()
-        : wordRef.current.focus();
+        : !values.translation
+        ? translationRef.current.focus()
+        : tagsRef.current.focus();
       setSuccessMsg("");
       setErrorMsg("To add a word please fill in all fields of the form");
     } else if (
