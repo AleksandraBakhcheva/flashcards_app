@@ -1,5 +1,11 @@
 import styles from "./WordsListAdd.module.css";
 import { GeneralContext } from "../../contexts/GeneralContext";
+import {
+  validateWord,
+  validateTranscription,
+  validateTranslation,
+  validateTags,
+} from "../../utils/validationFunctions";
 import { useState, useRef, useContext } from "react";
 
 export const WordsListAdd = () => {
@@ -38,10 +44,14 @@ export const WordsListAdd = () => {
       setSuccessMsg("");
       setErrorMsg("To add a word please fill in all fields of the form");
     } else if (
-      validateWord(values.word) &&
-      validateTranslation(values.translation) &&
-      values.transcription &&
-      values.tags
+      validateWord(values.word, setErrorMsg, wordRef) &&
+      validateTranscription(
+        values.transcription,
+        setErrorMsg,
+        transcriptionRef
+      ) &&
+      validateTranslation(values.translation, setErrorMsg, transcriptionRef) &&
+      validateTags(values.tags, setErrorMsg, tagsRef)
     ) {
       setValues(initialValues);
       setErrorMsg("");
@@ -66,35 +76,20 @@ export const WordsListAdd = () => {
       [name]: value,
     });
     if (values.word) {
-      validateWord(values.word);
+      validateWord(values.word, setErrorMsg, wordRef);
+    }
+    if (values.transcription) {
+      validateTranscription(
+        values.transcription,
+        setErrorMsg,
+        transcriptionRef
+      );
     }
     if (values.translation) {
-      validateTranslation(values.translation);
+      validateTranslation(values.translation, setErrorMsg, translationRef);
     }
-  };
-
-  const validateWord = (userInput) => {
-    const engLetters = /^[A-Za-z]+$/gm;
-    if (!engLetters.test(userInput)) {
-      setErrorMsg("For the word field please use only latin characters");
-      wordRef.current.focus();
-    } else {
-      setErrorMsg("");
-      return true;
-    }
-  };
-
-  const validateTranslation = (userInput) => {
-    setSuccessMsg("");
-    const rusLetters = /^[А-Яа-я]+$/gm;
-    if (!rusLetters.test(userInput)) {
-      setErrorMsg(
-        "For the translation field please use only cyrillic characters"
-      );
-      translationRef.current.focus();
-    } else {
-      setErrorMsg("");
-      return true;
+    if (values.tags) {
+      validateTags(values.tags, setErrorMsg, tagsRef);
     }
   };
 
