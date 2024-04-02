@@ -67,7 +67,7 @@
 }
 
 .card_translation p {
-  padding: 2%;
+  padding: 1.5%;
   color: var(--general-color-white);
   background-color: var(--dark-color-blue);
 }
