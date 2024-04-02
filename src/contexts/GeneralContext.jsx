@@ -53,13 +53,22 @@ export const GeneralContextProvider = ({ children }) => {
 
   async function deleteWord(id) {
     try {
-      await fetch(`${apiData}${id}`, {
+      const wordsCollection = await fetch(`${apiData}${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
         },
       });
-      loadData();
+      const data = await wordsCollection.json();
+      let index = context.findIndex((word) => word.id == data.id);
+      if (context[index].learned === true) {
+        isLearned(learned - 1);
+      }
+      context.splice(index, 1);
+      setContext(context);
+      if (context < 1) {
+        loadData();
+      }
     } catch (error) {
       console.log("error", error);
       setLoading(true);
@@ -71,14 +80,20 @@ export const GeneralContextProvider = ({ children }) => {
 
   async function updateWord(newWord) {
     try {
-      await fetch(`${apiData}${newWord.id}`, {
+      const wordsCollection = await fetch(`${apiData}${newWord.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
         },
         body: JSON.stringify(newWord),
       });
-      loadData();
+      const data = await wordsCollection.json();
+      let index = context.findIndex((word) => word.id == data.id);
+      if (context[index].learned === true) {
+        isLearned(learned - 1);
+      }
+      context.splice(index, 1, data);
+      setContext(context);
     } catch (error) {
       console.log("error", error);
       setLoading(true);
@@ -88,8 +103,9 @@ export const GeneralContextProvider = ({ children }) => {
     }
   }
 
-  const updateLearned = () => {
+  const updateLearned = (id) => {
     isLearned(learned + 1);
+    context[id].learned = true;
   };
 
   useEffect(() => {

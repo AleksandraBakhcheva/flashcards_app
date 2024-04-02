@@ -14,6 +14,7 @@ export const WordsListAdd = () => {
     transcription: "",
     translation: "",
     tags: "",
+    learned: false,
   };
 
   const context = useContext(GeneralContext);
@@ -64,6 +65,7 @@ export const WordsListAdd = () => {
         transcription: values.transcription,
         translation: values.translation,
         tags: values.tags,
+        learned: values.learned,
       };
       context.addWord(newWord);
     }

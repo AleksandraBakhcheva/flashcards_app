@@ -32,7 +32,7 @@ export const WordsList = () => {
   };
 
   const calculateLearned = () => {
-    updateLearned();
+    updateLearned(index);
     const wordsUpdate = [...context];
     wordsUpdate[index].isClicked = true;
     setContext(wordsUpdate);
